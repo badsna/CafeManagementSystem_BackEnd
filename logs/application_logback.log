@@ -1,0 +1,570 @@
+2023-09-07 16:23:06 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 14072 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-07 16:23:06 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-07 16:23:07 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-07 16:23:07 [main] INFO  : Finished Spring Data repository scanning in 82 ms. Found 4 JPA repository interfaces.
+2023-09-07 16:23:07 [main] INFO  : Post-processing PropertySource instances
+2023-09-07 16:23:07 [main] INFO  : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2023-09-07 16:23:07 [main] INFO  : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2023-09-07 16:23:07 [main] INFO  : Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2023-09-07 16:23:07 [main] INFO  : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2023-09-07 16:23:07 [main] INFO  : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2023-09-07 16:23:07 [main] INFO  : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2023-09-07 16:23:07 [main] INFO  : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-09-07 16:23:07 [main] INFO  : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2023-09-07 16:23:07 [main] INFO  : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2023-09-07 16:23:07 [main] INFO  : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2023-09-07 16:23:07 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-07 16:23:07 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-07 16:23:07 [main] INFO  : Starting service [Tomcat]
+2023-09-07 16:23:07 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-07 16:23:07 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-07 16:23:07 [main] INFO  : Root WebApplicationContext: initialization completed in 1679 ms
+2023-09-07 16:23:08 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-07 16:23:08 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-07 16:23:08 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-07 16:23:08 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-07 16:23:08 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-07 16:23:08 [main] INFO  : HikariPool-1 - Starting...
+2023-09-07 16:23:08 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@30c7be6f
+2023-09-07 16:23:08 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-07 16:23:09 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-07 16:23:09 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-07 16:23:09 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 16:23:10 [main] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-07 16:23:10 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-07 16:23:10 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4a2c69a6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12581426, org.springframework.security.web.context.SecurityContextHolderFilter@1f15d346, org.springframework.security.web.header.HeaderWriterFilter@688884e, org.springframework.web.filter.CorsFilter@3c84c32f, org.springframework.security.web.authentication.logout.LogoutFilter@3af17313, com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter@f26cd76, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5abf9a76, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ee37c7a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57ac220f, org.springframework.security.web.session.SessionManagementFilter@7b237c2c, org.springframework.security.web.access.ExceptionTranslationFilter@7410c197, org.springframework.security.web.access.intercept.AuthorizationFilter@1928208d]
+2023-09-07 16:23:11 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-07 16:23:11 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-07 16:23:11 [main] INFO  : Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+2023-09-07 16:23:11 [main] INFO  : Property Source systemProperties refreshed
+2023-09-07 16:23:11 [main] INFO  : Property Source systemEnvironment refreshed
+2023-09-07 16:23:11 [main] INFO  : Property Source random refreshed
+2023-09-07 16:23:11 [main] INFO  : Property Source Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' refreshed
+2023-09-07 16:23:11 [main] INFO  : Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-09-07 16:23:11 [main] INFO  : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2023-09-07 16:23:11 [main] INFO  : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2023-09-07 16:23:11 [main] INFO  : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2023-09-07 16:23:11 [main] INFO  : Started CafeManagementSystemApplication in 5.452 seconds (process running for 6.7)
+2023-09-07 16:25:18 [http-nio-8080-exec-1] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-07 16:25:18 [http-nio-8080-exec-1] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-09-07 16:25:18 [http-nio-8080-exec-1] INFO  : Completed initialization in 15 ms
+2023-09-07 16:25:18 [http-nio-8080-exec-2] ERROR : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-09-07T10:39:38Z. Current time: 2023-09-07T10:40:18Z, a difference of 40566 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at com.example.cafemanagementsystem.jwt.JwtUtil.extractAllClaims(JwtUtil.java:68)
+	at com.example.cafemanagementsystem.jwt.JwtUtil.extractClam(JwtUtil.java:60)
+	at com.example.cafemanagementsystem.jwt.JwtUtil.extractUsername(JwtUtil.java:24)
+	at com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-09-07 16:25:37 [http-nio-8080-exec-5] ERROR : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-09-07T10:39:38Z. Current time: 2023-09-07T10:40:37Z, a difference of 59589 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at com.example.cafemanagementsystem.jwt.JwtUtil.extractAllClaims(JwtUtil.java:68)
+	at com.example.cafemanagementsystem.jwt.JwtUtil.extractClam(JwtUtil.java:60)
+	at com.example.cafemanagementsystem.jwt.JwtUtil.extractUsername(JwtUtil.java:24)
+	at com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-09-07 16:25:51 [http-nio-8080-exec-7] ERROR : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-09-07T10:39:38Z. Current time: 2023-09-07T10:40:51Z, a difference of 73140 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at com.example.cafemanagementsystem.jwt.JwtUtil.extractAllClaims(JwtUtil.java:68)
+	at com.example.cafemanagementsystem.jwt.JwtUtil.extractClam(JwtUtil.java:60)
+	at com.example.cafemanagementsystem.jwt.JwtUtil.extractUsername(JwtUtil.java:24)
+	at com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-09-07 16:26:01 [http-nio-8080-exec-9] INFO  : Inside login
+2023-09-07 16:26:02 [http-nio-8080-exec-9] INFO  : badsna555@mailinator.com
+2023-09-07 16:28:46 [http-nio-8080-exec-2] ERROR : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-09-07T10:43:02Z. Current time: 2023-09-07T10:43:46Z, a difference of 44937 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at com.example.cafemanagementsystem.jwt.JwtUtil.extractAllClaims(JwtUtil.java:68)
+	at com.example.cafemanagementsystem.jwt.JwtUtil.extractClam(JwtUtil.java:60)
+	at com.example.cafemanagementsystem.jwt.JwtUtil.extractUsername(JwtUtil.java:24)
+	at com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-09-07 16:29:02 [http-nio-8080-exec-4] INFO  : Inside login
+2023-09-07 16:29:03 [http-nio-8080-exec-4] INFO  : badsna555@mailinator.com
+2023-09-07 16:32:28 [http-nio-8080-exec-1] ERROR : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-09-07T10:46:03Z. Current time: 2023-09-07T10:47:28Z, a difference of 85507 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at com.example.cafemanagementsystem.jwt.JwtUtil.extractAllClaims(JwtUtil.java:68)
+	at com.example.cafemanagementsystem.jwt.JwtUtil.extractClam(JwtUtil.java:60)
+	at com.example.cafemanagementsystem.jwt.JwtUtil.extractUsername(JwtUtil.java:24)
+	at com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-09-07 17:01:53 [HikariPool-1 housekeeper] WARN  : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m11s866ms587µs700ns).
+2023-09-07 17:49:07 [http-nio-8080-exec-5] INFO  : Inside login
+2023-09-07 17:49:08 [http-nio-8080-exec-5] INFO  : badsna555@mailinator.com
+2023-09-07 17:49:31 [http-nio-8080-exec-3] INFO  : Inside login
+2023-09-07 17:49:31 [http-nio-8080-exec-3] INFO  : badsna55@mailinator.com
+2023-09-07 17:49:37 [http-nio-8080-exec-6] INFO  : inside if
+2023-09-07 17:49:49 [http-nio-8080-exec-1] INFO  : inside if
+2023-09-07 17:49:53 [http-nio-8080-exec-3] INFO  : inside if
+2023-09-07 17:53:36 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 17:53:36 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-07 17:53:36 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-07 17:53:56 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 13260 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-07 17:53:56 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-07 17:53:58 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-07 17:53:58 [main] INFO  : Finished Spring Data repository scanning in 288 ms. Found 4 JPA repository interfaces.
+2023-09-07 17:53:59 [main] INFO  : Post-processing PropertySource instances
+2023-09-07 17:53:59 [main] INFO  : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2023-09-07 17:53:59 [main] INFO  : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2023-09-07 17:53:59 [main] INFO  : Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2023-09-07 17:53:59 [main] INFO  : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2023-09-07 17:53:59 [main] INFO  : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2023-09-07 17:53:59 [main] INFO  : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2023-09-07 17:53:59 [main] INFO  : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-09-07 17:53:59 [main] INFO  : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2023-09-07 17:54:00 [main] INFO  : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2023-09-07 17:54:00 [main] INFO  : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2023-09-07 17:54:00 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-07 17:54:00 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-07 17:54:00 [main] INFO  : Starting service [Tomcat]
+2023-09-07 17:54:00 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-07 17:54:00 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-07 17:54:00 [main] INFO  : Root WebApplicationContext: initialization completed in 4210 ms
+2023-09-07 17:54:01 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-07 17:54:01 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-07 17:54:01 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-07 17:54:02 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-07 17:54:02 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-07 17:54:02 [main] INFO  : HikariPool-1 - Starting...
+2023-09-07 17:54:03 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@52909a97
+2023-09-07 17:54:03 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-07 17:54:03 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-07 17:54:06 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-07 17:54:06 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 17:54:07 [main] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-07 17:54:09 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-07 17:54:10 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7746330a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3de4f936, org.springframework.security.web.context.SecurityContextHolderFilter@2a1fce44, org.springframework.security.web.header.HeaderWriterFilter@4973dacf, org.springframework.web.filter.CorsFilter@252459b2, org.springframework.security.web.authentication.logout.LogoutFilter@2ccfd2cb, com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter@128ca7af, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b5fdbd0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@349469db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5128efc, org.springframework.security.web.session.SessionManagementFilter@2f89b44e, org.springframework.security.web.access.ExceptionTranslationFilter@38293d23, org.springframework.security.web.access.intercept.AuthorizationFilter@110b6c78]
+2023-09-07 17:54:10 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-07 17:54:10 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-07 17:54:10 [main] INFO  : Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+2023-09-07 17:54:10 [main] INFO  : Property Source systemProperties refreshed
+2023-09-07 17:54:10 [main] INFO  : Property Source systemEnvironment refreshed
+2023-09-07 17:54:10 [main] INFO  : Property Source random refreshed
+2023-09-07 17:54:10 [main] INFO  : Property Source Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' refreshed
+2023-09-07 17:54:10 [main] INFO  : Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-09-07 17:54:10 [main] INFO  : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2023-09-07 17:54:10 [main] INFO  : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2023-09-07 17:54:10 [main] INFO  : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2023-09-07 17:54:11 [main] INFO  : Started CafeManagementSystemApplication in 14.999 seconds (process running for 16.329)
+2023-09-07 17:54:38 [http-nio-8080-exec-1] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-07 17:54:38 [http-nio-8080-exec-1] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-09-07 17:54:38 [http-nio-8080-exec-1] INFO  : Completed initialization in 2 ms
+2023-09-07 17:55:18 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 17:55:18 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-07 17:55:18 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-07 17:55:28 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 17380 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-07 17:55:28 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-07 17:55:29 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-07 17:55:29 [main] INFO  : Finished Spring Data repository scanning in 124 ms. Found 4 JPA repository interfaces.
+2023-09-07 17:55:29 [main] INFO  : Post-processing PropertySource instances
+2023-09-07 17:55:29 [main] INFO  : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2023-09-07 17:55:29 [main] INFO  : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2023-09-07 17:55:29 [main] INFO  : Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2023-09-07 17:55:29 [main] INFO  : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2023-09-07 17:55:29 [main] INFO  : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2023-09-07 17:55:29 [main] INFO  : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2023-09-07 17:55:29 [main] INFO  : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-09-07 17:55:30 [main] INFO  : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2023-09-07 17:55:30 [main] INFO  : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2023-09-07 17:55:30 [main] INFO  : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2023-09-07 17:55:30 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-07 17:55:30 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-07 17:55:30 [main] INFO  : Starting service [Tomcat]
+2023-09-07 17:55:30 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-07 17:55:30 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-07 17:55:30 [main] INFO  : Root WebApplicationContext: initialization completed in 2248 ms
+2023-09-07 17:55:30 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-07 17:55:31 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-07 17:55:31 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-07 17:55:31 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-07 17:55:31 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-07 17:55:31 [main] INFO  : HikariPool-1 - Starting...
+2023-09-07 17:55:31 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@43a7203e
+2023-09-07 17:55:31 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-07 17:55:32 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-07 17:55:33 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-07 17:55:33 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 17:55:34 [main] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-07 17:55:35 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-07 17:55:35 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@619dc070, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22ab3e3b, org.springframework.security.web.context.SecurityContextHolderFilter@5297030e, org.springframework.security.web.header.HeaderWriterFilter@63fe055, org.springframework.web.filter.CorsFilter@311819e8, org.springframework.security.web.authentication.logout.LogoutFilter@349469db, com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter@5114c8a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7315264e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ae5cbb9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1639ec7a, org.springframework.security.web.session.SessionManagementFilter@1227ea21, org.springframework.security.web.access.ExceptionTranslationFilter@18b8518b, org.springframework.security.web.access.intercept.AuthorizationFilter@108a7fff]
+2023-09-07 17:55:35 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-07 17:55:35 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-07 17:55:35 [main] INFO  : Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+2023-09-07 17:55:35 [main] INFO  : Property Source systemProperties refreshed
+2023-09-07 17:55:35 [main] INFO  : Property Source systemEnvironment refreshed
+2023-09-07 17:55:35 [main] INFO  : Property Source random refreshed
+2023-09-07 17:55:35 [main] INFO  : Property Source Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' refreshed
+2023-09-07 17:55:35 [main] INFO  : Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-09-07 17:55:35 [main] INFO  : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2023-09-07 17:55:35 [main] INFO  : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2023-09-07 17:55:35 [main] INFO  : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2023-09-07 17:55:35 [main] INFO  : Started CafeManagementSystemApplication in 7.945 seconds (process running for 9.191)
+2023-09-07 17:55:40 [http-nio-8080-exec-2] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-07 17:55:40 [http-nio-8080-exec-2] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-09-07 17:55:40 [http-nio-8080-exec-2] INFO  : Completed initialization in 6 ms
+2023-09-07 17:55:40 [http-nio-8080-exec-2] INFO  : Inside forgotPassword()
+2023-09-07 17:56:11 [http-nio-8080-exec-3] INFO  : Inside forgotPassword()
+2023-09-07 17:56:11 [http-nio-8080-exec-3] INFO  : Inside forgotMail()
+2023-09-07 17:56:55 [http-nio-8080-exec-6] INFO  : Inside forgotPassword()
+2023-09-07 17:58:10 [http-nio-8080-exec-10] INFO  : Inside forgotPassword()
+2023-09-07 17:58:41 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 17:58:41 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-07 17:58:41 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-07 17:58:52 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 17384 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-07 17:58:52 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-07 17:58:53 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-07 17:58:54 [main] INFO  : Finished Spring Data repository scanning in 166 ms. Found 4 JPA repository interfaces.
+2023-09-07 17:58:54 [main] INFO  : Post-processing PropertySource instances
+2023-09-07 17:58:54 [main] INFO  : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2023-09-07 17:58:54 [main] INFO  : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2023-09-07 17:58:54 [main] INFO  : Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2023-09-07 17:58:54 [main] INFO  : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2023-09-07 17:58:54 [main] INFO  : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2023-09-07 17:58:54 [main] INFO  : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2023-09-07 17:58:54 [main] INFO  : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-09-07 17:58:54 [main] INFO  : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2023-09-07 17:58:54 [main] INFO  : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2023-09-07 17:58:54 [main] INFO  : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2023-09-07 17:58:54 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-07 17:58:54 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-07 17:58:54 [main] INFO  : Starting service [Tomcat]
+2023-09-07 17:58:54 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-07 17:58:55 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-07 17:58:55 [main] INFO  : Root WebApplicationContext: initialization completed in 2253 ms
+2023-09-07 17:58:55 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-07 17:58:55 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-07 17:58:55 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-07 17:58:55 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-07 17:58:55 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-07 17:58:55 [main] INFO  : HikariPool-1 - Starting...
+2023-09-07 17:58:55 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@57bdceaa
+2023-09-07 17:58:55 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-07 17:58:56 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-07 17:58:57 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-07 17:58:57 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 17:58:57 [main] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-07 17:58:58 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-07 17:58:58 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@e62d757, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@597f2d3f, org.springframework.security.web.context.SecurityContextHolderFilter@730a140b, org.springframework.security.web.header.HeaderWriterFilter@38293d23, org.springframework.web.filter.CorsFilter@7746330a, org.springframework.security.web.authentication.logout.LogoutFilter@57ac220f, com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter@3bac86a3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a1fce44, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@588b02a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3de4f936, org.springframework.security.web.session.SessionManagementFilter@7f746160, org.springframework.security.web.access.ExceptionTranslationFilter@4e132a9b, org.springframework.security.web.access.intercept.AuthorizationFilter@63069995]
+2023-09-07 17:58:59 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-07 17:58:59 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-07 17:58:59 [main] INFO  : Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+2023-09-07 17:58:59 [main] INFO  : Property Source systemProperties refreshed
+2023-09-07 17:58:59 [main] INFO  : Property Source systemEnvironment refreshed
+2023-09-07 17:58:59 [main] INFO  : Property Source random refreshed
+2023-09-07 17:58:59 [main] INFO  : Property Source Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' refreshed
+2023-09-07 17:58:59 [main] INFO  : Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-09-07 17:58:59 [main] INFO  : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2023-09-07 17:58:59 [main] INFO  : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2023-09-07 17:58:59 [main] INFO  : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2023-09-07 17:58:59 [main] INFO  : Started CafeManagementSystemApplication in 7.066 seconds (process running for 8.448)
+2023-09-07 17:59:16 [http-nio-8080-exec-3] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-07 17:59:16 [http-nio-8080-exec-3] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-09-07 17:59:16 [http-nio-8080-exec-3] INFO  : Completed initialization in 3 ms
+2023-09-07 17:59:16 [http-nio-8080-exec-3] INFO  : Inside forgotPassword()
+2023-09-07 18:00:00 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 18:00:00 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-07 18:00:00 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-07 18:00:10 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 11404 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-07 18:00:10 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-07 18:00:11 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-07 18:00:11 [main] INFO  : Finished Spring Data repository scanning in 197 ms. Found 4 JPA repository interfaces.
+2023-09-07 18:00:12 [main] INFO  : Post-processing PropertySource instances
+2023-09-07 18:00:12 [main] INFO  : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2023-09-07 18:00:12 [main] INFO  : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2023-09-07 18:00:12 [main] INFO  : Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2023-09-07 18:00:12 [main] INFO  : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2023-09-07 18:00:12 [main] INFO  : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2023-09-07 18:00:12 [main] INFO  : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2023-09-07 18:00:12 [main] INFO  : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-09-07 18:00:12 [main] INFO  : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2023-09-07 18:00:12 [main] INFO  : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2023-09-07 18:00:12 [main] INFO  : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2023-09-07 18:00:12 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-07 18:00:12 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-07 18:00:12 [main] INFO  : Starting service [Tomcat]
+2023-09-07 18:00:12 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-07 18:00:12 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-07 18:00:12 [main] INFO  : Root WebApplicationContext: initialization completed in 2307 ms
+2023-09-07 18:00:13 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-07 18:00:13 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-07 18:00:13 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-07 18:00:13 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-07 18:00:13 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-07 18:00:13 [main] INFO  : HikariPool-1 - Starting...
+2023-09-07 18:00:13 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@43a7203e
+2023-09-07 18:00:13 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-07 18:00:14 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-07 18:00:15 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-07 18:00:15 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-07 18:00:15 [main] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-07 18:00:17 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-07 18:00:17 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@22ab3e3b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@311819e8, org.springframework.security.web.context.SecurityContextHolderFilter@7fcc8d9f, org.springframework.security.web.header.HeaderWriterFilter@50572c04, org.springframework.web.filter.CorsFilter@1639ec7a, org.springframework.security.web.authentication.logout.LogoutFilter@2c3a2935, com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter@5114c8a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@11c68269, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f15d346, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1928208d, org.springframework.security.web.session.SessionManagementFilter@511ba9c9, org.springframework.security.web.access.ExceptionTranslationFilter@6960e7a6, org.springframework.security.web.access.intercept.AuthorizationFilter@56f8ab05]
+2023-09-07 18:00:18 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-07 18:00:18 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-07 18:00:18 [main] INFO  : Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+2023-09-07 18:00:18 [main] INFO  : Property Source systemProperties refreshed
+2023-09-07 18:00:18 [main] INFO  : Property Source systemEnvironment refreshed
+2023-09-07 18:00:18 [main] INFO  : Property Source random refreshed
+2023-09-07 18:00:18 [main] INFO  : Property Source Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' refreshed
+2023-09-07 18:00:18 [main] INFO  : Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-09-07 18:00:18 [main] INFO  : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2023-09-07 18:00:18 [main] INFO  : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2023-09-07 18:00:18 [main] INFO  : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2023-09-07 18:00:18 [main] INFO  : Started CafeManagementSystemApplication in 8.745 seconds (process running for 9.831)
+2023-09-07 18:00:20 [http-nio-8080-exec-1] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-07 18:00:20 [http-nio-8080-exec-1] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-09-07 18:00:20 [http-nio-8080-exec-1] INFO  : Completed initialization in 5 ms
+2023-09-07 18:00:21 [http-nio-8080-exec-1] INFO  : Inside forgotPassword()
+2023-09-07 18:00:21 [http-nio-8080-exec-1] INFO  : Inside forgotMail()
+2023-09-07 18:00:42 [http-nio-8080-exec-4] INFO  : Inside forgotPassword()
+2023-09-07 18:00:58 [http-nio-8080-exec-5] INFO  : Inside forgotPassword()
+2023-09-07 18:00:58 [http-nio-8080-exec-5] INFO  : Inside forgotMail()
+2023-09-07 18:04:44 [http-nio-8080-exec-7] INFO  : Inside login
+2023-09-07 18:04:44 [http-nio-8080-exec-7] INFO  : Authenticating user
+2023-09-07 18:04:44 [http-nio-8080-exec-7] INFO  : Inside generateToken()
+2023-09-07 18:04:44 [http-nio-8080-exec-7] INFO  : Inside createToken()
+2023-09-07 18:04:50 [http-nio-8080-exec-9] INFO  : inside if

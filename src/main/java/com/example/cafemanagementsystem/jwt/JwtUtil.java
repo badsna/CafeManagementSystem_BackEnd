@@ -6,6 +6,8 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
@@ -18,26 +20,32 @@ import java.util.function.Function;
 @Service
 
 public class JwtUtil {
+    Logger log= LoggerFactory.getLogger(JwtUtil.class);
     private static final String SECRET_KEY = "34743777217A25432A462D4A614E645267556B586E3272357538782F413F4428";
 
     public String extractUsername(String token) {
         return extractClam(token, Claims::getSubject);
     }
 
-    public String generateToken(String username,String role){
-        Map<String,Object> claims=new HashMap<>();
-        claims.put("role",role);
-        return createToken(claims,username);
+    public String generateToken(String username, String role) {
+        log.info("Inside generateToken()");
+
+        Map<String, Object> claims = new HashMap<>();
+        claims.put("role", role);
+
+        return createToken(claims, username);
     }
 
-    private String createToken(Map<String,Object> claims, String subject){
+    private String createToken(Map<String, Object> claims, String subject) {
+        log.info("Inside createToken()");
+
         return Jwts.builder()
                 .setClaims(claims)
                 .setSubject(subject)
                 .setIssuedAt(new Date(System.currentTimeMillis()))
                 //yesma dheraii time ko lagi token rakhnu hudaina past ma ne jana sakxa
                 .setExpiration(new Date(System.currentTimeMillis() + (10 * 60 * 60 * 1000))) // 10 hours in milliseconds
-                .signWith(SignatureAlgorithm.HS256,SECRET_KEY).compact();
+                .signWith(SignatureAlgorithm.HS256, SECRET_KEY).compact();
     }
 
 
@@ -62,8 +70,9 @@ public class JwtUtil {
 
     public Claims extractAllClaims(String token) {
 
-        return Jwts.parser()
+        return Jwts.parserBuilder()
                 .setSigningKey(getSiginInKey())
+                .build()
                 .parseClaimsJws(token)
                 .getBody();
     }

@@ -20,7 +20,6 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class UserController {
     private final UserService userService;
-    Logger logger= LoggerFactory.getLogger(UserController.class);
     @PostMapping("/signup")
     public ResponseEntity<String> signup(@RequestBody(required = true)Map<String,String> userRequestDto){
         try {
@@ -65,12 +64,9 @@ public class UserController {
 
     @GetMapping("/checkToken")
     public ResponseEntity<String> checkToken(){
-        logger.info("Received a checkToken request.");
         try{
             return userService.checkToken();
         }catch (Exception ex){
-            logger.error("An error occurred while processing the checkToken request.", ex);
-
             ex.printStackTrace();
         }
         return CafeUtils.getResponseEntity(CafeConstants.SOMETHING_WENT_WRONG,HttpStatus.INTERNAL_SERVER_ERROR);

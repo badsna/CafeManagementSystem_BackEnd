@@ -1,20 +1,19 @@
 package com.example.cafemanagementsystem.model;
 
-import com.example.cafemanagementsystem.enums.Role;
 import jakarta.persistence.*;
 import lombok.Data;
-import org.hibernate.annotations.DynamicInsert;
-import org.hibernate.annotations.DynamicUpdate;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import java.io.Serial;
 import java.util.Collection;
 import java.util.List;
 
 @Data
 public class UserRequestDto implements UserDetails {
-    private static final long serialVesionUID=1L;
+    @Serial
+    private static final long serialVersionUID =1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

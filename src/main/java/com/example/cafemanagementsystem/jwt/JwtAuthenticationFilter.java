@@ -21,8 +21,8 @@ import java.io.IOException;
 @RequiredArgsConstructor
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
     private final JwtUtil jwtUtil;
-    Claims claims=null;
-    private String userEmail=null;
+    Claims claims = null;
+    private String userEmail = null;
 
     private final UserDetailsService userDetailsService;
 
@@ -44,7 +44,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         jwt = authHeader.substring(7);
 
         userEmail = jwtUtil.extractUsername(jwt);
-        claims= jwtUtil.extractAllClaims(jwt);
+        claims = jwtUtil.extractAllClaims(jwt);
 
         if (userEmail != null && SecurityContextHolder.getContext().getAuthentication() == null) {
             UserDetails userDetails = this.userDetailsService.loadUserByUsername(userEmail);
@@ -67,13 +67,15 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         filterChain.doFilter(request, response);
     }
 
-    public boolean isAdmin(){
-        return "admin".equalsIgnoreCase((String)claims.get("role"));
+    public boolean isAdmin() {
+        return "admin".equalsIgnoreCase((String) claims.get("role"));
     }
-    public boolean isUser(){
+
+    public boolean isUser() {
         return "user".equalsIgnoreCase((String) claims.get("role"));
     }
-    public String getCurrentUser(){
+
+    public String getCurrentUser() {
         return userEmail;
     }
 

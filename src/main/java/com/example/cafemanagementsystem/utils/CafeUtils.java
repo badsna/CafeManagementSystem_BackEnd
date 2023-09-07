@@ -3,9 +3,10 @@ package com.example.cafemanagementsystem.utils;
 import com.google.common.base.Strings;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import lombok.extern.slf4j.Slf4j;
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
@@ -13,11 +14,10 @@ import java.io.File;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-@Slf4j
-public class CafeUtils {
-    private CafeUtils() {
 
-    }
+public class CafeUtils {
+   public static Logger log= LoggerFactory.getLogger(CafeUtils.class);
+    private CafeUtils() {}
 
     public static ResponseEntity<String> getResponseEntity(String responseMessage, HttpStatus httpStatus) {
         return new ResponseEntity<String>("{\"message\":\"" + responseMessage + "\"}", httpStatus);

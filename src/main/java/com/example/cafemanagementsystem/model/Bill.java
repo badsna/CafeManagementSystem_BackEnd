@@ -7,18 +7,22 @@ import org.hibernate.annotations.ColumnTransformer;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
+import java.io.Serial;
+import java.io.Serializable;
+
 @Data
 @Entity
 @DynamicUpdate
 @DynamicInsert
 @Table
-public class Bill {
-    private static final long serialVersionUID=1L;
+public class Bill implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String  uuid;
+    private String uuid;
     private String name;
     private String email;
     private String contactNumber;

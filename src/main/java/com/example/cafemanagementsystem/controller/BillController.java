@@ -5,7 +5,6 @@ import com.example.cafemanagementsystem.model.Bill;
 import com.example.cafemanagementsystem.service.BillService;
 import com.example.cafemanagementsystem.utils.CafeUtils;
 import lombok.RequiredArgsConstructor;
-import org.apache.coyote.Response;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -29,7 +28,6 @@ public class BillController {
         }
         return CafeUtils.getResponseEntity(CafeConstants.SOMETHING_WENT_WRONG, HttpStatus.INTERNAL_SERVER_ERROR);
     }
-
     @GetMapping("/getBills")
     ResponseEntity<List<Bill>> getBills(){
         try {

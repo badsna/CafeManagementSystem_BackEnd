@@ -5,15 +5,15 @@ import lombok.Data;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
-import java.security.PrivateKey;
+import java.io.Serializable;
 
 @Data
 @Entity
 @DynamicInsert
 @DynamicUpdate
 @Table
-public class Product {
-    public static final long serialVerisonUID=1L;
+public class Product implements Serializable {
+    private static final long serialVersionUID =1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

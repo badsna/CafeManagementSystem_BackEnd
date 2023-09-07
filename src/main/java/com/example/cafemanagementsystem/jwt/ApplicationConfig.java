@@ -25,18 +25,19 @@ public class ApplicationConfig implements UserDetailsService {
     private final UserRepo userRepo;
     private Users users;
 
-            @Override
-            public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-                users = userRepo.findByEmail(username);
-                if (!Objects.isNull(users))
-                    return new User(users.getEmail(), users.getPassword(), new ArrayList<>());
-                else
-                    throw new UsernameNotFoundException("User not found.");
-            }
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        users = userRepo.findByEmail(username);
+        if (!Objects.isNull(users))
+            return new User(users.getEmail(), users.getPassword(), new ArrayList<>());
+        else
+            throw new UsernameNotFoundException("User not found.");
+    }
 
-    public Users getUserDetail(){
+    public Users getUserDetail() {
         return users;
     }
+
     @Bean
     public AuthenticationProvider authenticationProvider() {
 

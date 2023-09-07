@@ -1,7 +1,6 @@
 package com.example.cafemanagementsystem.controller;
 
 import com.example.cafemanagementsystem.constants.CafeConstants;
-import com.example.cafemanagementsystem.model.Category;
 import com.example.cafemanagementsystem.service.ProductService;
 import com.example.cafemanagementsystem.utils.CafeUtils;
 import com.example.cafemanagementsystem.wrapper.ProductWrapper;
@@ -86,6 +85,5 @@ public class ProductController {
         }
         return new ResponseEntity<>(new ProductWrapper(), HttpStatus.INTERNAL_SERVER_ERROR);
     }
-
 
 }
