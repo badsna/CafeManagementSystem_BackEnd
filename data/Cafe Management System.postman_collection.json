@@ -1,0 +1,863 @@
+{
+	"info": {
+		"_postman_id": "485ff851-2db9-492d-94b0-c30322c6b037",
+		"name": "Cafe Management System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27797508"
+	},
+	"item": [
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "/product/delete/2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmFzdGhhQGdtYWlsLmNvbSIsImlhdCI6MTY4OTkyMzg1MiwiZXhwIjo1NDk3MDI2NDU2NDg3MzQ1fQ.5iIraYNwfJAp6AHtOEfEoWSUUsBC86ybP36os9hcG8Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/product/delete/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/product/getAll",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmFzdGhhQGdtYWlsLmNvbSIsImlhdCI6MTY4OTkyMzg1MiwiZXhwIjo1NDk3MDI2NDU2NDg3MzQ1fQ.5iIraYNwfJAp6AHtOEfEoWSUUsBC86ybP36os9hcG8Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/product/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/product/getAll Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmFzdGhhQGdtYWlsLmNvbSIsImlhdCI6MTY4OTkyMzg1MiwiZXhwIjo1NDk3MDI2NDU2NDg3MzQ1fQ.5iIraYNwfJAp6AHtOEfEoWSUUsBC86ybP36os9hcG8Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/product/getByCategory/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"getByCategory",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/product/update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmFzdGhhQGdtYWlsLmNvbSIsImlhdCI6MTY4OTkxMzE0NCwiZXhwIjo1NDk2NjQwOTg1NDc5MzQ1fQ.4Hrp13r8Myx0odl-pzacrgjfNCawLUF_NFBnFxZ3nak",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryId\":\"1\",\r\n    \"name\":\"chicken pizza\",\r\n    \"description\":\"slice of  pizza\",\r\n    \"price\":\"150\",\r\n    \"id\":\"1\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/product/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/product/add",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmE1NTVAbWFpbGluYXRvci5jb20iLCJpYXQiOjE2OTM5MDUxODcsImV4cCI6MTY5Mzk0MTE4N30.QgHcE9psQ0O9SFoDA9sGzumBmu_9WPmkCt6asFarhvs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryId\":\"1\",\r\n    \"name\":\"cheese pizza\",\r\n    \"description\":\"pizza with cheese\",\r\n    \"price\":\"150\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/product/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/product/updateStatus",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmFzdGhhQGdtYWlsLmNvbSIsImlhdCI6MTY4OTkxMzE0NCwiZXhwIjo1NDk2NjQwOTg1NDc5MzQ1fQ.4Hrp13r8Myx0odl-pzacrgjfNCawLUF_NFBnFxZ3nak",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"status\":\"false\",\r\n    \"id\":\"1\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/product/updateStatus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"updateStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/product/getByCategoryId/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmFzdGhhQGdtYWlsLmNvbSIsImlhdCI6MTY4OTkyMzg1MiwiZXhwIjo1NDk3MDI2NDU2NDg3MzQ1fQ.5iIraYNwfJAp6AHtOEfEoWSUUsBC86ybP36os9hcG8Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/product/getByCategory/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"getByCategory",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/product/getByProductId/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmFzdGhhQGdtYWlsLmNvbSIsImlhdCI6MTY4OTkyMzg1MiwiZXhwIjo1NDk3MDI2NDU2NDg3MzQ1fQ.5iIraYNwfJAp6AHtOEfEoWSUUsBC86ybP36os9hcG8Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/product/getByProductId/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"getByProductId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "/user/signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"badsna55\",\r\n    \"contactNumber\":\"9840528371\",\r\n    \"email\":\"badsna55@mailinator.com\",\r\n    \"password\":\"badsna55\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/user/update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmE1NTVAbWFpbGluYXRvci5jb20iLCJpYXQiOjE2OTM4MDgxNTEsImV4cCI6MTY5Mzg0NDE1MX0.tprmfgjejwkBhi2RDOp57JCxMSjmDE2-Gu7RDRdeGjE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"9\",\r\n    \"status\": \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/user/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"badsna555@mailinator.com\",\r\n    \"password\":\"badsna555\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/user/getAll",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmFzdGhhQGdtYWlsLmNvbSIsImlhdCI6MTY4OTgyOTQ5MCwiZXhwIjo1NDkzNjI5NDM3MzAzMzQ1fQ.pBYW63BuI2AV53APmEJ_VQ_BwhC1DgjbnQwtqMoCXXE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/user/changePassword",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmFzdGhhQGdtYWlsLmNvbSIsImlhdCI6MTY4OTgyOTQ5MCwiZXhwIjo1NDkzNjI5NDM3MzAzMzQ1fQ.pBYW63BuI2AV53APmEJ_VQ_BwhC1DgjbnQwtqMoCXXE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oldPassword\":\"bads\",\r\n    \"newPassword\":\"badsna123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/changePassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/user/forgotPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"badsnastha@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/forgotPassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"forgotPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/user/checkToken",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoidXNlciIsInN1YiI6ImRlbGw1NUBtYWlsaW5hdG9yLmNvbSIsImlhdCI6MTY5MzczMTU1MiwiZXhwIjo1NjM0MTAzNjUzMjExMzQ1fQ.HknLVPlNlbFhHIXNHTyjCjNUmH5imEL0CRHoerhAYUg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/checkToken",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"checkToken"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "/category/add",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmFzdGhhQGdtYWlsLmNvbSIsImlhdCI6MTY4OTkxMzE0NCwiZXhwIjo1NDk2NjQwOTg1NDc5MzQ1fQ.4Hrp13r8Myx0odl-pzacrgjfNCawLUF_NFBnFxZ3nak",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Dosa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/category/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/category/update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmFzdGhhQGdtYWlsLmNvbSIsImlhdCI6MTY4OTkxMzE0NCwiZXhwIjo1NDk2NjQwOTg1NDc5MzQ1fQ.4Hrp13r8Myx0odl-pzacrgjfNCawLUF_NFBnFxZ3nak",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"2\",\r\n    \"name\": \"TestData\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/category/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/category/getAll",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmFzdGhhQGdtYWlsLmNvbSIsImlhdCI6MTY4OTkxMzE0NCwiZXhwIjo1NDk2NjQwOTg1NDc5MzQ1fQ.4Hrp13r8Myx0odl-pzacrgjfNCawLUF_NFBnFxZ3nak",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/category/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category",
+								"getAll"
+							],
+							"query": [
+								{
+									"key": "filterValue",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "bill",
+			"item": [
+				{
+					"name": "/bill/generateReport",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmFzdGhhQGdtYWlsLmNvbSIsImlhdCI6MTY5MDAyNTU0MSwiZXhwIjo1NTAwNjg3MjU5NTUxMzQ1fQ.RMR148_QMToU-uK2SXJlXrjdqCZhzj7hjwKDV0St6hI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fileName\": \"xyzzzxy\",\r\n    \"contactNumber\": \"1234567890\",\r\n    \"email\": \"test@gmail.com\",\r\n    \"name\": \"test\",\r\n    \"paymentMethod\": \"Cash\",\r\n    \"productDetails\": \"[{\\\"id\\\":6,\\\"name\\\":\\\"cheese pizza\\\",\\\"category\\\":\\\"Coffeeeeeee\\\",\\\"quantity\\\":\\\"1\\\",\\\"price\\\":120,\\\"total\\\":120},{\\\"id\\\":5,\\\"name\\\":\\\"Chocolate Frosted Doughnut\\\",\\\"category\\\":\\\"Doughnut\\\",\\\"quantity\\\":\\\"1\\\",\\\"price\\\":159,\\\"total\\\":159},{\\\"id\\\":18,\\\"name\\\":\\\"Doppio Coffee\\\",\\\"category\\\":\\\"Coffee\\\",\\\"quantity\\\":\\\"1\\\",\\\"price\\\":120,\\\"total\\\":120},{\\\"id\\\":5,\\\"name\\\":\\\"Chocolate Frosted Doughnut\\\",\\\"category\\\":\\\"Doughnut\\\",\\\"quantity\\\":\\\"1\\\",\\\"price\\\":159,\\\"total\\\":159}]\",\r\n    \"totalAmount\": \"279\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/bill/generateReport",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bill",
+								"generateReport"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bill/getBills",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmFzdGhhQGdtYWlsLmNvbSIsImlhdCI6MTY5MDAyNTU0MSwiZXhwIjo1NTAwNjg3MjU5NTUxMzQ1fQ.RMR148_QMToU-uK2SXJlXrjdqCZhzj7hjwKDV0St6hI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/bill/getBills",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bill",
+								"getBills"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bill/getPdf",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmFzdGhhQGdtYWlsLmNvbSIsImlhdCI6MTY5MDAyNTU0MSwiZXhwIjo1NTAwNjg3MjU5NTUxMzQ1fQ.RMR148_QMToU-uK2SXJlXrjdqCZhzj7hjwKDV0St6hI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fileName\": \"xyzzzxy\",\r\n    \"contactNumber\": \"1234567890\",\r\n    \"email\": \"test@gmail.com\",\r\n    \"name\": \"test\",\r\n    \"paymentMethod\": \"Cash\",\r\n    \"productDetails\": \"[{\\\"id\\\":18,\\\"name\\\":\\\"Doppio Coffee\\\",\\\"category\\\":\\\"Coffee\\\",\\\"quantity\\\":\\\"1\\\",\\\"price\\\":120,\\\"total\\\":120},{\\\"id\\\":5,\\\"name\\\":\\\"Chocolate Frosted Doughnut\\\",\\\"category\\\":\\\"Doughnut\\\",\\\"quantity\\\":\\\"1\\\",\\\"price\\\":159,\\\"total\\\":159},{\\\"id\\\":18,\\\"name\\\":\\\"Doppio Coffee\\\",\\\"category\\\":\\\"Coffee\\\",\\\"quantity\\\":\\\"1\\\",\\\"price\\\":120,\\\"total\\\":120},{\\\"id\\\":5,\\\"name\\\":\\\"Chocolate Frosted Doughnut\\\",\\\"category\\\":\\\"Doughnut\\\",\\\"quantity\\\":\\\"1\\\",\\\"price\\\":159,\\\"total\\\":159}]\",\r\n    \"totalAmount\": \"279\",\r\n    \"uuid\": \"BILL-1651115157419\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/bill/getPdf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bill",
+								"getPdf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bill/delete/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmFzdGhhQGdtYWlsLmNvbSIsImlhdCI6MTY4OTkyMzg1MiwiZXhwIjo1NDk3MDI2NDU2NDg3MzQ1fQ.5iIraYNwfJAp6AHtOEfEoWSUUsBC86ybP36os9hcG8Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/bill/delete/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bill",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "dashboard",
+			"item": [
+				{
+					"name": "/bill/getPdf Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmFzdGhhQGdtYWlsLmNvbSIsImlhdCI6MTY5MDAyNTU0MSwiZXhwIjo1NTAwNjg3MjU5NTUxMzQ1fQ.RMR148_QMToU-uK2SXJlXrjdqCZhzj7hjwKDV0St6hI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fileName\": \"xyzzzxy\",\r\n    \"contactNumber\": \"1234567890\",\r\n    \"email\": \"test@gmail.com\",\r\n    \"name\": \"test\",\r\n    \"paymentMethod\": \"Cash\",\r\n    \"productDetails\": \"[{\\\"id\\\":18,\\\"name\\\":\\\"Doppio Coffee\\\",\\\"category\\\":\\\"Coffee\\\",\\\"quantity\\\":\\\"1\\\",\\\"price\\\":120,\\\"total\\\":120},{\\\"id\\\":5,\\\"name\\\":\\\"Chocolate Frosted Doughnut\\\",\\\"category\\\":\\\"Doughnut\\\",\\\"quantity\\\":\\\"1\\\",\\\"price\\\":159,\\\"total\\\":159},{\\\"id\\\":18,\\\"name\\\":\\\"Doppio Coffee\\\",\\\"category\\\":\\\"Coffee\\\",\\\"quantity\\\":\\\"1\\\",\\\"price\\\":120,\\\"total\\\":120},{\\\"id\\\":5,\\\"name\\\":\\\"Chocolate Frosted Doughnut\\\",\\\"category\\\":\\\"Doughnut\\\",\\\"quantity\\\":\\\"1\\\",\\\"price\\\":159,\\\"total\\\":159}]\",\r\n    \"totalAmount\": \"279\",\r\n    \"uuid\": \"BILL-1651115157419\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/bill/getPdf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bill",
+								"getPdf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/dashboard/details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmFzdGhhQGdtYWlsLmNvbSIsImlhdCI6MTY5MDAyNTU0MSwiZXhwIjo1NTAwNjg3MjU5NTUxMzQ1fQ.RMR148_QMToU-uK2SXJlXrjdqCZhzj7hjwKDV0St6hI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fileName\": \"xyzzzxy\",\r\n    \"contactNumber\": \"1234567890\",\r\n    \"email\": \"test@gmail.com\",\r\n    \"name\": \"test\",\r\n    \"paymentMethod\": \"Cash\",\r\n    \"productDetails\": \"[{\\\"id\\\":18,\\\"name\\\":\\\"Doppio Coffee\\\",\\\"category\\\":\\\"Coffee\\\",\\\"quantity\\\":\\\"1\\\",\\\"price\\\":120,\\\"total\\\":120},{\\\"id\\\":5,\\\"name\\\":\\\"Chocolate Frosted Doughnut\\\",\\\"category\\\":\\\"Doughnut\\\",\\\"quantity\\\":\\\"1\\\",\\\"price\\\":159,\\\"total\\\":159},{\\\"id\\\":18,\\\"name\\\":\\\"Doppio Coffee\\\",\\\"category\\\":\\\"Coffee\\\",\\\"quantity\\\":\\\"1\\\",\\\"price\\\":120,\\\"total\\\":120},{\\\"id\\\":5,\\\"name\\\":\\\"Chocolate Frosted Doughnut\\\",\\\"category\\\":\\\"Doughnut\\\",\\\"quantity\\\":\\\"1\\\",\\\"price\\\":159,\\\"total\\\":159}]\",\r\n    \"totalAmount\": \"279\",\r\n    \"uuid\": \"BILL-1651115157419\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/dashboard/details",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"dashboard",
+								"details"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
