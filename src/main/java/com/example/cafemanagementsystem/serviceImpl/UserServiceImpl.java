@@ -11,8 +11,8 @@ import com.example.cafemanagementsystem.utils.CafeUtils;
 import com.example.cafemanagementsystem.utils.EmailUtils;
 import com.example.cafemanagementsystem.wrapper.UserWrapper;
 import com.google.common.base.Strings;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -20,7 +20,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -235,23 +234,23 @@ public class UserServiceImpl implements UserService {
         return CafeUtils.getResponseEntity(CafeConstants.SOMETHING_WENT_WRONG, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
+
     @Override
-    public ResponseEntity<String> forgotPassword(Map<String, String> userRequestDto) {
-        log.info("Inside forgotPassword()");
-
-        try {
-            Users user=userRepo.findByEmail(userRequestDto.get("email"));
-
-            if(!Objects.isNull(user) && !Strings.isNullOrEmpty(user.getEmail())) {
-                emailUtils.forgotMail(user.getEmail(), "Credentials by Cafe Management System", user.getPassword());
-                return CafeUtils.getResponseEntity("Check your mail for credentials.", HttpStatus.OK);
-            }
-            return CafeUtils.getResponseEntity("User Not Found",HttpStatus.OK);
-
-        }catch (Exception ex){
-            ex.printStackTrace();
+    public ResponseEntity<UserWrapper> getUserDetails() {
+        try{
+           String email= jwtAuthenticationFilter.getCurrentUser();
+            Users users=userRepo.findByEmail(email);
+            UserWrapper userWrapper=new UserWrapper();
+            userWrapper.setId(users.getId());
+            userWrapper.setName(users.getName());
+            userWrapper.setEmail(users.getEmail());
+            userWrapper.setContactNumber(users.getContactNumber());
+            userWrapper.setStatus(users.getStatus());
+            return new ResponseEntity<>(userWrapper, HttpStatus.OK);
+        }catch (Exception e){
+            e.printStackTrace();
         }
-        return CafeUtils.getResponseEntity(CafeConstants.SOMETHING_WENT_WRONG, HttpStatus.INTERNAL_SERVER_ERROR);
+        return new ResponseEntity<>(new UserWrapper(), HttpStatus.INTERNAL_SERVER_ERROR);
 
     }
 }

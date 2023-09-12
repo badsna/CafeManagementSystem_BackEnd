@@ -19,5 +19,7 @@ public interface UserService {
 
     ResponseEntity<String> changePassword(Map<String, String> userRequestDto);
 
-    ResponseEntity<String> forgotPassword(Map<String, String> userRequestDto);
+
+
+    ResponseEntity<UserWrapper> getUserDetails();
 }

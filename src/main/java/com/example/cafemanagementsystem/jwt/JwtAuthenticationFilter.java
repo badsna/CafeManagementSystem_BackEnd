@@ -1,11 +1,14 @@
 package com.example.cafemanagementsystem.jwt;
 
+import com.example.cafemanagementsystem.serviceImpl.BillServiceImpl;
 import io.jsonwebtoken.Claims;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.lang.NonNull;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -25,6 +28,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     private String userEmail = null;
 
     private final UserDetailsService userDetailsService;
+    Logger log = LoggerFactory.getLogger(BillServiceImpl.class);
 
     @Override
     protected void doFilterInternal(
@@ -68,10 +72,13 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     }
 
     public boolean isAdmin() {
+        log.info("Inside isAdmin()");
         return "admin".equalsIgnoreCase((String) claims.get("role"));
     }
 
     public boolean isUser() {
+        log.info("Inside isUser()");
+
         return "user".equalsIgnoreCase((String) claims.get("role"));
     }
 

@@ -1,10 +1,12 @@
 package com.example.cafemanagementsystem.serviceImpl;
 
 import com.example.cafemanagementsystem.constants.CafeConstants;
+import com.example.cafemanagementsystem.enums.Role;
 import com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter;
 import com.example.cafemanagementsystem.model.Bill;
-import com.example.cafemanagementsystem.model.Product;
+import com.example.cafemanagementsystem.model.Users;
 import com.example.cafemanagementsystem.repo.BillRepo;
+import com.example.cafemanagementsystem.repo.UserRepo;
 import com.example.cafemanagementsystem.service.BillService;
 import com.example.cafemanagementsystem.utils.CafeUtils;
 import com.itextpdf.text.*;
@@ -15,6 +17,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.pdfbox.io.IOUtils;
 import org.json.JSONArray;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -28,10 +32,12 @@ import java.util.stream.Stream;
 
 @Service
 @RequiredArgsConstructor
-@Slf4j
+
 public class BillServiceImpl implements BillService {
     private final BillRepo billRepo;
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
+    private final UserRepo userRepo;
+    Logger log= LoggerFactory.getLogger(BillServiceImpl.class);
 
     @Override
     public ResponseEntity<String> generateReport(Map<String, Object> billRequestDto) {
@@ -41,10 +47,11 @@ public class BillServiceImpl implements BillService {
             String fileName;
             if (validateRequestMap(billRequestDto)) {
                 log.info("Validation Successful");
-                //
+
                 if (billRequestDto.containsKey("isGenerate") && !(Boolean) billRequestDto.get("isGenerate")) {
                     fileName = (String) billRequestDto.get("uuid");
-                } else {
+                }
+                else {
                     //else part generate unique file name , pass it into billRequestDto to insert into database
                     fileName = CafeUtils.getUUID();
                     billRequestDto.put("uuid", fileName);
@@ -57,7 +64,8 @@ public class BillServiceImpl implements BillService {
 
                 //location to store document
                 Document document = new Document();
-                PdfWriter.getInstance(document, new FileOutputStream(CafeConstants.STORE_LOCATION + "\\" + fileName + ".pdf"));
+                System.out.println(CafeConstants.STORE_LOCATION + "\\" + fileName + ".pdf");
+                PdfWriter.getInstance(document, new FileOutputStream(CafeConstants.STORE_LOCATION + File.separator + fileName + ".pdf"));
 
                 //open the document
                 document.open();
@@ -69,7 +77,7 @@ public class BillServiceImpl implements BillService {
                 document.add(chunk);
 
                 //data we have in paragraph
-                Paragraph paragraph = new Paragraph(data+"\n\n", getFont("Data"));
+                Paragraph paragraph = new Paragraph(data + "\n\n", getFont("Data"));
                 document.add(paragraph);
 
                 //table of pdf
@@ -83,6 +91,7 @@ public class BillServiceImpl implements BillService {
                 for (int i = 0; i < jsonArray.length(); i++) {
                     addRow(table, CafeUtils.getMapFromJson(jsonArray.getString(i)));
                 }
+
                 document.add(table);
 
                 //footer of pdf
@@ -98,15 +107,20 @@ public class BillServiceImpl implements BillService {
                 return new ResponseEntity<>("{\"uuid\":\"" + fileName + "\"}", HttpStatus.OK);
 
             }
+
             return CafeUtils.getResponseEntity("Required data not found", HttpStatus.BAD_REQUEST);
-        } catch (Exception ex) {
+
+        }
+        catch (Exception ex) {
             ex.printStackTrace();
         }
+
         return CafeUtils.getResponseEntity(CafeConstants.SOMETHING_WENT_WRONG, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
     private void addRow(PdfPTable table, Map<String, Object> data) {
         log.info("Inside addRow");
+
         table.addCell((String) data.get("name"));
         table.addCell((String) data.get("category"));
         table.addCell((String) data.get("quantity"));
@@ -116,6 +130,7 @@ public class BillServiceImpl implements BillService {
 
     private void addTableHeader(PdfPTable table) {
         log.info("inside addTableHeader");
+
         Stream.of("Name", "Category", "Quantity", "Price", "Sub Total")
                 .forEach(columnTitle -> {
                     PdfPCell header = new PdfPCell();
@@ -131,15 +146,18 @@ public class BillServiceImpl implements BillService {
 
     private Font getFont(String header) {
         log.info("Inside getFont");
+
         switch (header) {
             case "Header":
                 Font headerFont = FontFactory.getFont(FontFactory.HELVETICA_BOLDOBLIQUE, 18, BaseColor.BLACK);
                 headerFont.setStyle(Font.BOLD);
                 return headerFont;
+
             case "Data":
                 Font dataFont = FontFactory.getFont(FontFactory.TIMES_ROMAN, 11, BaseColor.BLACK);
                 dataFont.setStyle(Font.BOLD);
                 return dataFont;
+
             default:
                 return new Font();
         }
@@ -147,6 +165,7 @@ public class BillServiceImpl implements BillService {
 
     private void setRectangleInPdf(Document document) throws DocumentException {
         log.info("inside setRectangleInPdf");
+
         Rectangle rectangle = new Rectangle(557, 825, 18, 15);
         rectangle.enableBorderSide(1);
         rectangle.enableBorderSide(2);
@@ -160,7 +179,7 @@ public class BillServiceImpl implements BillService {
 
     private boolean validateRequestMap(Map<String, Object> billRequestDto) {
         log.info("Inside validateRequestMap");
-        log.info(billRequestDto.toString());
+
         return billRequestDto.containsKey("name") &&
                 billRequestDto.containsKey("contactNumber") &&
                 billRequestDto.containsKey("email") &&
@@ -171,12 +190,26 @@ public class BillServiceImpl implements BillService {
 
     private void insertBill(Map<String, Object> billRequestDto) {
         log.info("Inside insertBill");
+
         try {
+            String email = jwtAuthenticationFilter.getCurrentUser();
+            Users users = userRepo.findByEmail(email);
             Bill bill = new Bill();
             bill.setUuid((String) billRequestDto.get("uuid"));
-            bill.setName((String) billRequestDto.get("name"));
-            bill.setEmail((String) billRequestDto.get("email"));
-            bill.setContactNumber((String) billRequestDto.get("contactNumber"));
+
+            if (users.getRole().equalsIgnoreCase(String.valueOf(Role.ADMIN))) {
+
+                bill.setName((String) billRequestDto.get("name"));
+                bill.setEmail((String) billRequestDto.get("email"));
+                bill.setContactNumber((String) billRequestDto.get("contactNumber"));
+            }
+            else{
+
+                bill.setName(users.getName());
+                bill.setEmail(users.getEmail());
+                bill.setContactNumber(users.getContactNumber());
+            }
+
             bill.setPaymentMethod((String) billRequestDto.get("paymentMethod"));
             bill.setTotal(Integer.parseInt((String) billRequestDto.get("totalAmount")));
 
@@ -185,51 +218,55 @@ public class BillServiceImpl implements BillService {
             bill.setProductDetails((String) billRequestDto.get("productDetails"));
             bill.setCreatedBy(jwtAuthenticationFilter.getCurrentUser());
             billRepo.save(bill);
-        } catch (Exception ex) {
+        }
+
+        catch (Exception ex) {
             ex.printStackTrace();
         }
     }
 
     @Override
     public ResponseEntity<List<Bill>> getBills() {
-        List<Bill> list=new ArrayList<>();
-        if(jwtAuthenticationFilter.isAdmin()){
-          list=billRepo.findAll();
-        }else{
-            list=billRepo.findByCreatedBy(jwtAuthenticationFilter.getCurrentUser());
+
+        List<Bill> list = new ArrayList<>();
+        if (jwtAuthenticationFilter.isAdmin()) {
+            list = billRepo.findAll();
+        } else {
+            list = billRepo.findByCreatedBy(jwtAuthenticationFilter.getCurrentUser());
         }
-        return new ResponseEntity<>(list,HttpStatus.OK);
+        return new ResponseEntity<>(list, HttpStatus.OK);
     }
 
     @Override
     public ResponseEntity<byte[]> getPdf(Map<String, Object> pdfRequestDto) {
-        log.info("Inside getPdf:pdfRequestDto{}",pdfRequestDto);
-        try {
-            byte[] byteArray=new byte[0];
-            if(!pdfRequestDto.containsKey("uuid") && validateRequestMap(pdfRequestDto))
-                return new ResponseEntity<>(byteArray,HttpStatus.BAD_REQUEST);
-            String filePath=CafeConstants.STORE_LOCATION+"\\"+(String) pdfRequestDto.get("uuid")+".pdf";
 
-            if(CafeUtils.isFileExists(filePath)){
-                byteArray=getByteArray(filePath);
-                return new ResponseEntity<>(byteArray,HttpStatus.OK);
-            }else {
-                pdfRequestDto.put("isGenerate",false);
+        log.info("Inside getPdf:pdfRequestDto{}", pdfRequestDto);
+        try {
+            byte[] byteArray = new byte[0];
+            if (!pdfRequestDto.containsKey("uuid") && validateRequestMap(pdfRequestDto))
+                return new ResponseEntity<>(byteArray, HttpStatus.BAD_REQUEST);
+            String filePath = CafeConstants.STORE_LOCATION + "\\" + (String) pdfRequestDto.get("uuid") + ".pdf";
+
+            if (CafeUtils.isFileExists(filePath)) {
+                byteArray = getByteArray(filePath);
+                return new ResponseEntity<>(byteArray, HttpStatus.OK);
+            } else {
+                pdfRequestDto.put("isGenerate", false);
                 generateReport(pdfRequestDto);
-                byteArray=getByteArray(filePath);
-                return new ResponseEntity<>(byteArray,HttpStatus.OK);
+                byteArray = getByteArray(filePath);
+                return new ResponseEntity<>(byteArray, HttpStatus.OK);
             }
 
-        }catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
         return null;
     }
 
     private byte[] getByteArray(String filePath) throws IOException {
-        File initialFile=new File(filePath);
-        InputStream targetStream=new FileInputStream(initialFile);
-        byte[] byteArray= IOUtils.toByteArray(targetStream);
+        File initialFile = new File(filePath);
+        InputStream targetStream = new FileInputStream(initialFile);
+        byte[] byteArray = IOUtils.toByteArray(targetStream);
         targetStream.close();
         return byteArray;
     }
@@ -250,7 +287,7 @@ public class BillServiceImpl implements BillService {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-        return CafeUtils.getResponseEntity(CafeConstants.SOMETHING_WENT_WRONG, HttpStatus.INTERNAL_SERVER_ERROR);    }
-
+        return CafeUtils.getResponseEntity(CafeConstants.SOMETHING_WENT_WRONG, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
 
 }

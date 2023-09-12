@@ -6,5 +6,5 @@ public class CafeConstants {
     public static final String INVALID_DATA="Invalid data";
     public static final String UNAUTHORIZED_ACCESS="UnAuthorized Access";
     
-    public static final String STORE_LOCATION="C:\\Users\\ThinkPad\\IdeaProjects\\CafeManagementSystem\\data";
+    public static final String STORE_LOCATION= "C:\\Users\\ThinkPad\\IdeaProjects\\SpringBoot\\CafeManagementSystem\\data";
 }

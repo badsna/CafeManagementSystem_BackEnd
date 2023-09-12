@@ -37,7 +37,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(
                         (authorize) ->
                                 authorize
-                                        .requestMatchers("/user/login", "/user/signup", "/user/forgotPassword")
+                                        .requestMatchers("/user/login", "/user/signup", "/resetToken/generate","/resetToken/update","/resetToken/validate/**")
                                         .permitAll()
                                         .anyRequest()
                                         .authenticated()

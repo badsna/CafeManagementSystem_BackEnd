@@ -9,6 +9,8 @@ import com.example.cafemanagementsystem.utils.CafeUtils;
 import com.google.common.base.Strings;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -20,12 +22,17 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-@Slf4j
 public class CategoryServiceImpl implements CategoryService {
+
     private final CategoryRepo categoryRepo;
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
+
+    Logger log= LoggerFactory.getLogger(BillServiceImpl.class);
+
     @Override
     public ResponseEntity<String> addNewCategory(Map<String, String> categoryRequestDto) {
+        log.info("Inside addNewCategory()");
+
         try {
             if(jwtAuthenticationFilter.isAdmin()){
                 if(validateCategoryMap(categoryRequestDto, false)){
@@ -43,6 +50,8 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     private boolean validateCategoryMap(Map<String, String> categoryRequestDto, boolean validateId) {
+       log.info("Inside validateCategoryMap");
+
         if(categoryRequestDto.containsKey("name")){
             if(categoryRequestDto.containsKey("id") && validateId){
                 return true;
@@ -54,6 +63,8 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     private Category getCategoryFromMap(Map<String,String> categoryRequestDto,Boolean isAdd){
+        log.info("Inside getCategoryFromMap");
+
         Category category=new Category();
         if(isAdd){
             category.setId(Integer.parseInt(categoryRequestDto.get("id")));
@@ -64,10 +75,12 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public ResponseEntity<List<Category>> getAllCategory(String filterValue) {
+        log.info("Inside getAllCategory");
+
         try {
             //for category having products
             if(!Strings.isNullOrEmpty(filterValue) && filterValue.equalsIgnoreCase("true")){
-                log.info("inside if");
+               log.info("Getting categories that have products");
                 return new ResponseEntity<List<Category>>(categoryRepo.getAllCategory(),HttpStatus.OK);
             }
             return new ResponseEntity<>(categoryRepo.findAll(),HttpStatus.OK);
@@ -80,6 +93,7 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public ResponseEntity<String> updateCategory(Map<String, String> categoryRequestDto) {
+        log.info("Inside updateCategory()");
         try {
             if(jwtAuthenticationFilter.isAdmin()){
                 //we need id also so true

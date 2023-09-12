@@ -5,8 +5,6 @@ import com.example.cafemanagementsystem.service.UserService;
 import com.example.cafemanagementsystem.utils.CafeUtils;
 import com.example.cafemanagementsystem.wrapper.UserWrapper;
 import lombok.RequiredArgsConstructor;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -83,14 +81,16 @@ public class UserController {
         return CafeUtils.getResponseEntity(CafeConstants.SOMETHING_WENT_WRONG,HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
-    @PostMapping("/forgotPassword")
-    ResponseEntity<String> forgotPassword(@RequestBody Map<String,String> userRequestDto){
+
+
+    @GetMapping("/get")
+    public ResponseEntity<UserWrapper> getUserDetails(){
         try{
-            return userService.forgotPassword(userRequestDto);
+            return userService.getUserDetails();
         }catch (Exception ex){
             ex.printStackTrace();
         }
-        return CafeUtils.getResponseEntity(CafeConstants.SOMETHING_WENT_WRONG,HttpStatus.INTERNAL_SERVER_ERROR);
+        return new ResponseEntity<>(new UserWrapper(),HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
 }
