@@ -111,12 +111,21 @@
         </dependency>
 
 
-        <!-- https://mvnrepository.com/artifact/com.github.ulisesbocchio/jasypt-spring-boot-starter -->
+
         <dependency>
-            <groupId>com.github.ulisesbocchio</groupId>
-            <artifactId>jasypt-spring-boot-starter</artifactId>
-            <version>3.0.4</version>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.0.4</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20220924</version>
+        </dependency>
+
+
+
 
     </dependencies>
 
@@ -126,25 +135,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <plugin>
-                <groupId>com.github.ulisesbocchio</groupId>
-                <artifactId>jasypt-maven-plugin</artifactId>
-                <version>3.0.4</version>
-                <executions>
-                    <execution>
-                        <id>encrypt-properties</id>
-                        <goals>
-                            <goal>encrypt</goal>
-                        </goals>
-                        <configuration>
-                            <algorithm>PBEWithMD5AndDES</algorithm>
-                            <password>badsnanshor</password>
-                            <inputFile>src/main/resources/application.yml</inputFile>
-                            <outputFile>src/main/resources/application.yml</outputFile>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+
         </plugins>
     </build>
 

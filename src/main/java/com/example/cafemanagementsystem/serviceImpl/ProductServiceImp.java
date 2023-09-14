@@ -9,7 +9,6 @@ import com.example.cafemanagementsystem.service.ProductService;
 import com.example.cafemanagementsystem.utils.CafeUtils;
 import com.example.cafemanagementsystem.wrapper.ProductWrapper;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -23,7 +22,7 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-@Slf4j
+
 public class ProductServiceImp implements ProductService {
     private final ProductRepo productRepo;
     private final JwtAuthenticationFilter jwtAuthenticationFilter;

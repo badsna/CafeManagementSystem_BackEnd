@@ -1,0 +1,23 @@
+{
+  "badRequestResponse": {
+    "code": 400,
+    "status": "Bad Request"
+  },
+  "internalServerErrorResponse": {
+    "code": 500,
+    "status": "Internal Server Error"
+  },
+  "successResponse": {
+    "code": 200,
+    "status": "OK"
+  },
+  "forbiddenResponse": {
+    "code": 403,
+    "status": "Forbidden"
+  },
+  "unAuthorizedResponse": {
+    "code": 401,
+    "status": "UnAuthorized"
+  }
+
+}

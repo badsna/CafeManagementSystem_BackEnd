@@ -4,6 +4,11 @@ import com.example.cafemanagementsystem.constants.CafeConstants;
 import com.example.cafemanagementsystem.service.ProductService;
 import com.example.cafemanagementsystem.utils.CafeUtils;
 import com.example.cafemanagementsystem.wrapper.ProductWrapper;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.media.ExampleObject;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -77,7 +82,22 @@ public class ProductController {
     }
 
     @GetMapping("/getByProductId/{id}")
-    public ResponseEntity<ProductWrapper> getByProduct(@PathVariable Integer id){
+    @Operation(
+            description = "Getting Product By Id",
+            responses = {
+                    @ApiResponse(responseCode = "500", ref = "internalServerErrorAPI"),
+                    @ApiResponse(responseCode = "200",ref = "successAPI"),
+                    @ApiResponse(responseCode = "403", ref="forbiddenAPI")
+            },
+            security = @SecurityRequirement(name = "bearerAuth")
+    )
+    public ResponseEntity<ProductWrapper> getByProduct(
+            @Parameter(name = "id",required = true,examples = {
+                    @ExampleObject(
+                            value = "{\"id\": 1}"
+                    )
+            })
+            @PathVariable Integer id){
         try {
             return productService.getByProductId(id);
         }catch (Exception ex){

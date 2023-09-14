@@ -202,7 +202,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public ResponseEntity<String> checkToken() {
-        log.info("Inside checkToke()");
+        log.info("Inside checkToken()");
 
         return CafeUtils.getResponseEntity("true", HttpStatus.OK);
     }

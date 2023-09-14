@@ -292,7 +292,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"badsna55\",\r\n    \"contactNumber\":\"9840528371\",\r\n    \"email\":\"badsna55@mailinator.com\",\r\n    \"password\":\"badsna55\"\r\n}",
+							"raw": "{\r\n    \"name\":\"badsna5\",\r\n    \"contactNumber\":\"1234567892\",\r\n    \"email\":\"badsna5@mailinator.com\",\r\n    \"password\":\"badsna5\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -322,7 +322,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmE1NTVAbWFpbGluYXRvci5jb20iLCJpYXQiOjE2OTM4MDgxNTEsImV4cCI6MTY5Mzg0NDE1MX0.tprmfgjejwkBhi2RDOp57JCxMSjmDE2-Gu7RDRdeGjE",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmE1NTVAbWFpbGluYXRvci5jb20iLCJpYXQiOjE2OTQwNjcyMTIsImV4cCI6MTY5NDEwMzIxMn0.tpU5Fj4cDA46fCjhqAPGgvwNNZ0TSrQ49qjQU0v22aU",
 									"type": "string"
 								}
 							]
@@ -331,7 +331,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": \"9\",\r\n    \"status\": \"true\"\r\n}",
+							"raw": "{\r\n    \"id\": \"1\",\r\n    \"status\": \"true\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -390,7 +390,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmFzdGhhQGdtYWlsLmNvbSIsImlhdCI6MTY4OTgyOTQ5MCwiZXhwIjo1NDkzNjI5NDM3MzAzMzQ1fQ.pBYW63BuI2AV53APmEJ_VQ_BwhC1DgjbnQwtqMoCXXE",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmE1NTVAbWFpbGluYXRvci5jb20iLCJpYXQiOjE2OTQwNjcyMTIsImV4cCI6MTY5NDEwMzIxMn0.tpU5Fj4cDA46fCjhqAPGgvwNNZ0TSrQ49qjQU0v22aU",
 									"type": "string"
 								}
 							]
@@ -505,6 +505,36 @@
 							"path": [
 								"user",
 								"checkToken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/user/get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmE1NTVAbWFpbGluYXRvci5jb20iLCJpYXQiOjE2OTQzNjQyNjEsImV4cCI6MTY5NDQwMDI2MX0.1_BY-YAu26T6PdM3Gu5idf8GGT3N5c7O_evU2DCRN8o",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/get",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"get"
 							]
 						}
 					},
@@ -854,6 +884,121 @@
 								"details"
 							]
 						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "resettoken",
+			"item": [
+				{
+					"name": "/resetToken/generate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"badsna55@mailinator.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/resetToken/generate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"resetToken",
+								"generate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/resetToken/validate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzdWIiOiJiYWRzbmE1NTVAbWFpbGluYXRvci5jb20iLCJpYXQiOjE2OTQ0MTEwNjcsImV4cCI6MTY5NDQ0NzA2N30.AEHcDDbXB5HcQqytX-Eizc9BLS9jcHuj28lr2-I0da4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"ca593f66-a3aa-4a24-b741-95d5bfc34a08\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/resetToken/validate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"resetToken",
+								"validate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/resetToken/update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\":\"246d4dc9-a137-4bab-a228-24502eb60765\",\r\n    \"newPassword\":\"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/resetToken/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"resetToken",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "documentation",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
 					},
 					"response": []
 				}

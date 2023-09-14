@@ -11,16 +11,33 @@ import org.springframework.security.config.annotation.web.configurers.AbstractHt
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor
+
 public class SecurityConfig {
     private final JwtAuthenticationFilter jwtAuthFilter;
     private final AuthenticationProvider authenticationProvider;
+    public static final String[] PUBLIC_URLS = {
+            "/user/login",
+            "/user/signup",
+            "/resetToken/generate",
+            "/resetToken/update",
+            "/resetToken/validate/**",
+            "/v3/api-docs",
+            "/swagger-resources/**",
+            "/swagger-ui/**",
+            "/webjars/**",
+            "/configuration/**",
+            "/v3/openapi/**"
+
+    };
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
+
         httpSecurity
                 /*.cors(httpSecurityCorsConfigurer ->
                 {
@@ -37,7 +54,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(
                         (authorize) ->
                                 authorize
-                                        .requestMatchers("/user/login", "/user/signup", "/resetToken/generate","/resetToken/update","/resetToken/validate/**")
+                                        .requestMatchers(PUBLIC_URLS)
                                         .permitAll()
                                         .anyRequest()
                                         .authenticated()
