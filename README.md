@@ -1,6 +1,9 @@
 # CafeManagementSystem_BackEnd
 jdk 17, spring security 6, spring boot 3.1.3, swagger 3
 
+
+# FrontEnd is on https://github.com/badsna/CafeMangementSystem_Frontend 
+
 # Dependency  Used for generating and modifying PDF documents in your Java application.
   <!-- https://mvnrepository.com/artifact/com.itextpdf/itextpdf -->
         <dependency>
