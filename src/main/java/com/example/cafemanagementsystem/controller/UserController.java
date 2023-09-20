@@ -8,6 +8,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.ExampleObject;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -21,20 +22,19 @@ import java.util.Map;
 @RestController
 @RequestMapping("/user")
 @RequiredArgsConstructor
+@ApiResponses(value = {
+        @ApiResponse(responseCode = "400", ref = "badRequestAPI"),
+        @ApiResponse(responseCode = "500", ref = "internalServerErrorAPI"),
+        @ApiResponse(responseCode = "200", ref = "successAPI"),
+        @ApiResponse(responseCode = "403", ref = "forbiddenAPI"),
+        @ApiResponse(responseCode = "401", ref = "unAuthorizedAPI")
+})
+
 public class UserController {
     private final UserService userService;
 
     @PostMapping("/signup")
-    @Operation(
-            description = "Signup Service",
-            responses = {
-                    @ApiResponse(responseCode = "400",ref = "badRequestAPI"),
-                    @ApiResponse(responseCode = "500", ref = "internalServerErrorAPI"),
-                    @ApiResponse(responseCode = "200",ref = "successAPI")
-
-            }
-    )
-
+    @Operation(description = "Signup Service")
     public ResponseEntity<String> signup(
             @io.swagger.v3.oas.annotations.parameters.RequestBody(
                     content = @Content(
@@ -56,15 +56,7 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    @Operation(
-            description = "Login Service",
-            responses = {
-                    @ApiResponse(responseCode = "400",ref = "badRequestAPI"),
-                    @ApiResponse(responseCode = "500", ref = "internalServerErrorAPI"),
-                    @ApiResponse(responseCode = "200",ref = "successAPI")
-
-            }
-    )
+    @Operation(description = "Login Service")
     public ResponseEntity<String> login(
             @io.swagger.v3.oas.annotations.parameters.RequestBody(
                     content = @Content(
@@ -89,13 +81,6 @@ public class UserController {
     @GetMapping("/getAll")
     @Operation(
             description = "Getting all Users",
-            responses = {
-                    @ApiResponse(responseCode = "400", ref = "badRequestAPI"),
-                    @ApiResponse(responseCode = "500", ref = "internalServerErrorAPI"),
-                    @ApiResponse(responseCode = "200", ref = "successAPI"),
-                    @ApiResponse(responseCode = "403", ref="forbiddenAPI"),
-                    @ApiResponse(responseCode = "401", ref = "unAuthorizedAPI")
-            },
             security = @SecurityRequirement(name = "bearerAuth")
     )
     public ResponseEntity<List<UserWrapper>> getAllUser() {
@@ -112,12 +97,6 @@ public class UserController {
     @PostMapping("/update")
     @Operation(
             description = "Updating User Status",
-            responses = {
-                    @ApiResponse(responseCode = "500", ref = "internalServerErrorAPI"),
-                    @ApiResponse(responseCode = "200",ref = "successAPI"),
-                    @ApiResponse(responseCode = "403", ref="forbiddenAPI"),
-                    @ApiResponse(responseCode = "401", ref = "unAuthorizedAPI")
-            },
             security = @SecurityRequirement(name = "bearerAuth")
     )
     public ResponseEntity<String> updateUser(
@@ -142,10 +121,6 @@ public class UserController {
 
     @GetMapping("/checkToken")
     @Operation(
-            responses = {
-                    @ApiResponse(responseCode = "200",ref = "successAPI"),
-                    @ApiResponse(responseCode = "403", ref ="forbiddenAPI")
-            },
             security = @SecurityRequirement(name = "bearerAuth"),
             description = "Checking Token"
     )
@@ -162,12 +137,6 @@ public class UserController {
     @PostMapping("/changePassword")
     @Operation(
             description = "Changing Password",
-            responses = {
-                    @ApiResponse(responseCode = "400", ref = "badRequestAPI"),
-                    @ApiResponse(responseCode = "500", ref = "internalServerErrorAPI"),
-                    @ApiResponse(responseCode = "200", ref = "successAPI"),
-                    @ApiResponse(responseCode = "403", ref="forbiddenAPI"),
-            },
             security = @SecurityRequirement(name = "bearerAuth")
     )
     public ResponseEntity<String> changePassword(
@@ -193,11 +162,6 @@ public class UserController {
 
     @GetMapping("/get")
     @Operation(
-            responses = {
-                    @ApiResponse(responseCode = "500",ref = "internalServerErrorAPI"),
-                    @ApiResponse(responseCode = "200",ref = "successAPI"),
-                    @ApiResponse(responseCode = "403", ref ="forbiddenAPI")
-            },
             security = @SecurityRequirement(name = "bearerAuth"),
             description = "Getting Current User Details"
     )

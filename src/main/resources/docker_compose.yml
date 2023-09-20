@@ -1,0 +1,18 @@
+services:
+  cafemgmtsyscontainer:
+    image: cafemgmtsysimage   #Specifies the Docker image to use for the cafemgmtsyscontainer service.
+    container_name: cafemgmtsyscontainer
+    ports:
+      - "8090:8080"
+ #This format is useful when you want to explicitly specify the key and value for each environment variable,
+    environment:
+      - POSTGRES_HOST=postgrescontainer
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB= cafemgmtsys_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=
+    networks:
+      - resources_cafemgmtsys_network
+networks:
+  resources_cafemgmtsys_network:
+    external: true

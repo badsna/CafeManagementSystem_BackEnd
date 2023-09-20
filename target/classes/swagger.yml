@@ -1,0 +1,7 @@
+version: '3.18.3'
+services:
+    swaggercontainer:
+      image: swaggerapi/swagger-ui
+      ports:
+        - '8087:8080'
+

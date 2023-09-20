@@ -1,0 +1,10 @@
+version: '16'
+
+services:
+  postgrescontainer:  # containerName
+    image: postgres
+    ports:
+      - "5432:5432"  # host:container
+    environment:
+      POSTGRES_PASSWORD: "By@$hna%"  # Use underscores instead of hyphens
+      POSTGRES_DATABASE: cafemgmtsys_db  # Use underscores instead of hyphens

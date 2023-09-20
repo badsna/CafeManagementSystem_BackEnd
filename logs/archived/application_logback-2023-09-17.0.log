@@ -1,0 +1,567 @@
+2023-09-17 15:05:32 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 17872 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-17 15:05:32 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-17 15:05:35 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-17 15:05:35 [main] INFO  : Finished Spring Data repository scanning in 136 ms. Found 5 JPA repository interfaces.
+2023-09-17 15:05:36 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-17 15:05:36 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-17 15:05:36 [main] INFO  : Starting service [Tomcat]
+2023-09-17 15:05:36 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-17 15:05:36 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-17 15:05:36 [main] INFO  : Root WebApplicationContext: initialization completed in 3696 ms
+2023-09-17 15:05:36 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-17 15:05:36 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-17 15:05:36 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-17 15:05:36 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 15:05:36 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-17 15:05:36 [main] INFO  : HikariPool-1 - Starting...
+2023-09-17 15:05:37 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@586737ff
+2023-09-17 15:05:37 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-17 15:05:37 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 15:05:38 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-17 15:05:38 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 15:05:39 [main] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-17 15:05:40 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-17 15:05:41 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@25000d3d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72426ced, org.springframework.security.web.context.SecurityContextHolderFilter@28993a77, org.springframework.security.web.header.HeaderWriterFilter@2de3ac17, org.springframework.web.filter.CorsFilter@37ddb835, org.springframework.security.web.authentication.logout.LogoutFilter@5e7aa27e, com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter@5570ee6d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f1485c3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@184218af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42b4cce1, org.springframework.security.web.session.SessionManagementFilter@44881fcc, org.springframework.security.web.access.ExceptionTranslationFilter@4f93816d, org.springframework.security.web.access.intercept.AuthorizationFilter@5811f080]
+2023-09-17 15:05:41 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-17 15:05:41 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-17 15:05:41 [main] INFO  : Started CafeManagementSystemApplication in 10.858 seconds (process running for 12.72)
+2023-09-17 15:13:19 [main] INFO  : Could not detect default configuration classes for test class [com.example.cafemanagementsystem.CafeManagementSystemApplicationTests]: CafeManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-09-17 15:13:19 [main] INFO  : Found @SpringBootConfiguration com.example.cafemanagementsystem.CafeManagementSystemApplication for test class com.example.cafemanagementsystem.CafeManagementSystemApplicationTests
+2023-09-17 15:13:20 [main] INFO  : Starting CafeManagementSystemApplicationTests using Java 17.0.8 with PID 5908 (started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-17 15:13:20 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-17 15:13:23 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-17 15:13:23 [main] INFO  : Finished Spring Data repository scanning in 112 ms. Found 5 JPA repository interfaces.
+2023-09-17 15:13:24 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-17 15:13:24 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-17 15:13:24 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-17 15:13:24 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 15:13:25 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-17 15:13:25 [main] INFO  : HikariPool-1 - Starting...
+2023-09-17 15:13:25 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@258a8584
+2023-09-17 15:13:25 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-17 15:13:26 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 15:13:27 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-17 15:13:28 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 15:13:28 [main] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-17 15:13:30 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-17 15:13:33 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1285ec6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2abe5132, org.springframework.security.web.context.SecurityContextHolderFilter@37ddb835, org.springframework.security.web.header.HeaderWriterFilter@7e1f88e2, org.springframework.web.filter.CorsFilter@12fbc568, org.springframework.security.web.authentication.logout.LogoutFilter@5fe5f2f0, com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter@66acaa54, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@67f8586f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1dd36967, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3dd2a70d, org.springframework.security.web.session.SessionManagementFilter@2aef651, org.springframework.security.web.access.ExceptionTranslationFilter@7e5b449c, org.springframework.security.web.access.intercept.AuthorizationFilter@7eeabaf3]
+2023-09-17 15:13:34 [main] INFO  : Started CafeManagementSystemApplicationTests in 14.547 seconds (process running for 18.024)
+2023-09-17 15:13:37 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 15:13:37 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-17 15:13:37 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-17 15:17:25 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 15:17:25 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-17 15:17:25 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-17 15:17:35 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 12536 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-17 15:17:35 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-17 15:17:37 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-17 15:17:37 [main] INFO  : Finished Spring Data repository scanning in 126 ms. Found 5 JPA repository interfaces.
+2023-09-17 15:17:38 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-17 15:17:38 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-17 15:17:38 [main] INFO  : Starting service [Tomcat]
+2023-09-17 15:17:38 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-17 15:17:38 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-17 15:17:38 [main] INFO  : Root WebApplicationContext: initialization completed in 2994 ms
+2023-09-17 15:17:38 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-17 15:17:38 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-17 15:17:38 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-17 15:17:39 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 15:17:39 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-17 15:17:39 [main] INFO  : HikariPool-1 - Starting...
+2023-09-17 15:17:39 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@54275b5d
+2023-09-17 15:17:39 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-17 15:17:40 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 15:17:41 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-17 15:17:41 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 15:17:42 [main] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-17 15:17:43 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-17 15:17:44 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@fbb585e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e32a3ed, org.springframework.security.web.context.SecurityContextHolderFilter@69e3e1d9, org.springframework.security.web.header.HeaderWriterFilter@72412c3d, org.springframework.web.filter.CorsFilter@5e7aa27e, org.springframework.security.web.authentication.logout.LogoutFilter@2045108, com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter@38f569d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f93816d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1fa35f7e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b778004, org.springframework.security.web.session.SessionManagementFilter@4ed761dc, org.springframework.security.web.access.ExceptionTranslationFilter@62bcfa01, org.springframework.security.web.access.intercept.AuthorizationFilter@7b0d42b6]
+2023-09-17 15:17:44 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-17 15:17:44 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-17 15:17:44 [main] INFO  : Started CafeManagementSystemApplication in 10.069 seconds (process running for 11.716)
+2023-09-17 15:20:15 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 15:20:15 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-17 15:20:15 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-17 15:20:21 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 5112 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-17 15:20:21 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-17 15:20:22 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-17 15:20:23 [main] INFO  : Finished Spring Data repository scanning in 162 ms. Found 5 JPA repository interfaces.
+2023-09-17 15:20:24 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-17 15:20:24 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-17 15:20:24 [main] INFO  : Starting service [Tomcat]
+2023-09-17 15:20:24 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-17 15:20:24 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-17 15:20:24 [main] INFO  : Root WebApplicationContext: initialization completed in 3264 ms
+2023-09-17 15:20:24 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-17 15:20:24 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-17 15:20:24 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-17 15:20:25 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 15:20:25 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-17 15:20:25 [main] INFO  : HikariPool-1 - Starting...
+2023-09-17 15:20:25 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@77ba583
+2023-09-17 15:20:25 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-17 15:20:26 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 15:20:27 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-17 15:20:28 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 15:20:28 [main] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-17 15:20:29 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-17 15:20:30 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3f1485c3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17e03804, org.springframework.security.web.context.SecurityContextHolderFilter@22bd6b0a, org.springframework.security.web.header.HeaderWriterFilter@8cd00bc, org.springframework.web.filter.CorsFilter@764bf20d, org.springframework.security.web.authentication.logout.LogoutFilter@2de3ac17, com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter@1c7fd2e0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a389b39, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7902a4d7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@363bf9d, org.springframework.security.web.session.SessionManagementFilter@673ce246, org.springframework.security.web.access.ExceptionTranslationFilter@57283e4, org.springframework.security.web.access.intercept.AuthorizationFilter@7b2a6ed3]
+2023-09-17 15:20:30 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-17 15:20:30 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-17 15:20:30 [main] INFO  : Started CafeManagementSystemApplication in 10.573 seconds (process running for 11.927)
+2023-09-17 15:25:59 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 15:25:59 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-17 15:25:59 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-17 15:26:06 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 13760 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-17 15:26:06 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-17 15:26:08 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-17 15:26:08 [main] INFO  : Finished Spring Data repository scanning in 136 ms. Found 5 JPA repository interfaces.
+2023-09-17 15:26:09 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-17 15:26:09 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-17 15:26:09 [main] INFO  : Starting service [Tomcat]
+2023-09-17 15:26:09 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-17 15:26:09 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-17 15:26:09 [main] INFO  : Root WebApplicationContext: initialization completed in 2350 ms
+2023-09-17 15:26:09 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-17 15:26:09 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-17 15:26:09 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-17 15:26:09 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 15:26:10 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-17 15:26:10 [main] INFO  : HikariPool-1 - Starting...
+2023-09-17 15:26:10 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@401926df
+2023-09-17 15:26:10 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-17 15:26:10 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 15:26:11 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-17 15:26:11 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 15:26:12 [main] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-17 15:26:13 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-17 15:26:14 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@40123014, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13cfe28b, org.springframework.security.web.context.SecurityContextHolderFilter@53f67af6, org.springframework.security.web.header.HeaderWriterFilter@3e5e7f4c, org.springframework.web.filter.CorsFilter@3f634608, org.springframework.security.web.authentication.logout.LogoutFilter@19f007c4, com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter@329aa2d1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35abfeba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4268c16, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79fc6651, org.springframework.security.web.session.SessionManagementFilter@4149067d, org.springframework.security.web.access.ExceptionTranslationFilter@7d911f95, org.springframework.security.web.access.intercept.AuthorizationFilter@37ec9c49]
+2023-09-17 15:26:15 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-17 15:26:15 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-17 15:26:15 [main] INFO  : Started CafeManagementSystemApplication in 8.949 seconds (process running for 10.484)
+2023-09-17 15:27:50 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 15:27:50 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-17 15:27:50 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-17 15:27:57 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 18088 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-17 15:27:57 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-17 15:27:59 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-17 15:27:59 [main] INFO  : Finished Spring Data repository scanning in 102 ms. Found 5 JPA repository interfaces.
+2023-09-17 15:28:00 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-17 15:28:00 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-17 15:28:00 [main] INFO  : Starting service [Tomcat]
+2023-09-17 15:28:00 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-17 15:28:00 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-17 15:28:00 [main] INFO  : Root WebApplicationContext: initialization completed in 2845 ms
+2023-09-17 15:28:01 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-17 15:28:01 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-17 15:28:01 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-17 15:28:01 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 15:28:02 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-17 15:28:02 [main] INFO  : HikariPool-1 - Starting...
+2023-09-17 15:28:02 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@401926df
+2023-09-17 15:28:02 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-17 15:28:02 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 15:28:03 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-17 15:28:04 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 15:28:04 [main] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-17 15:28:05 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-17 15:28:06 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7b0d42b6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@179af25f, org.springframework.security.web.context.SecurityContextHolderFilter@4ed761dc, org.springframework.security.web.header.HeaderWriterFilter@538c90bf, org.springframework.web.filter.CorsFilter@6a73f164, org.springframework.security.web.authentication.logout.LogoutFilter@ebe3561, com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter@329aa2d1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c1f1c03, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5bf86398, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@fbb585e, org.springframework.security.web.session.SessionManagementFilter@19f007c4, org.springframework.security.web.access.ExceptionTranslationFilter@1f9ec3e7, org.springframework.security.web.access.intercept.AuthorizationFilter@15db4dc]
+2023-09-17 15:28:07 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-17 15:28:07 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-17 15:28:07 [main] INFO  : Started CafeManagementSystemApplication in 10.11 seconds (process running for 11.405)
+2023-09-17 15:29:45 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 15:29:45 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-17 15:29:45 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-17 15:29:50 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 10492 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-17 15:29:50 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-17 15:29:51 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-17 15:29:51 [main] INFO  : Finished Spring Data repository scanning in 82 ms. Found 5 JPA repository interfaces.
+2023-09-17 15:29:52 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-17 15:29:52 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-17 15:29:52 [main] INFO  : Starting service [Tomcat]
+2023-09-17 15:29:52 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-17 15:29:52 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-17 15:29:52 [main] INFO  : Root WebApplicationContext: initialization completed in 2079 ms
+2023-09-17 15:29:52 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-17 15:29:53 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-17 15:29:53 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-17 15:29:53 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 15:29:53 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-17 15:29:53 [main] INFO  : HikariPool-1 - Starting...
+2023-09-17 15:29:53 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@401926df
+2023-09-17 15:29:53 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-17 15:29:54 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 15:29:55 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-17 15:29:55 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 15:29:55 [main] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-17 15:29:56 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-17 15:29:57 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2e7a6dcd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@762261fd, org.springframework.security.web.context.SecurityContextHolderFilter@73790bb5, org.springframework.security.web.header.HeaderWriterFilter@1f9ec3e7, org.springframework.web.filter.CorsFilter@7b0d42b6, org.springframework.security.web.authentication.logout.LogoutFilter@1ececb56, com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter@329aa2d1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ed761dc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ccfa4b8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@179af25f, org.springframework.security.web.session.SessionManagementFilter@4fe03c06, org.springframework.security.web.access.ExceptionTranslationFilter@1940bacd, org.springframework.security.web.access.intercept.AuthorizationFilter@14b3976]
+2023-09-17 15:29:57 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-17 15:29:57 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-17 15:29:57 [main] INFO  : Started CafeManagementSystemApplication in 7.87 seconds (process running for 9.192)
+2023-09-17 15:35:09 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 15:35:09 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-17 15:35:09 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-17 15:39:29 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 11584 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-17 15:39:29 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-17 15:39:32 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-17 15:39:33 [main] INFO  : Finished Spring Data repository scanning in 449 ms. Found 5 JPA repository interfaces.
+2023-09-17 15:39:35 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-17 15:39:35 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-17 15:39:35 [main] INFO  : Starting service [Tomcat]
+2023-09-17 15:39:35 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-17 15:39:36 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-17 15:39:36 [main] INFO  : Root WebApplicationContext: initialization completed in 6278 ms
+2023-09-17 15:39:36 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-17 15:39:36 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-17 15:39:36 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-17 15:39:37 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 15:39:38 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-17 15:39:38 [main] INFO  : HikariPool-1 - Starting...
+2023-09-17 15:39:39 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@61e14b53
+2023-09-17 15:39:39 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-17 15:39:40 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 15:39:43 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-17 15:39:43 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 15:39:44 [main] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-17 15:39:47 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-17 15:39:48 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@fbb585e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e32a3ed, org.springframework.security.web.context.SecurityContextHolderFilter@69e3e1d9, org.springframework.security.web.header.HeaderWriterFilter@72412c3d, org.springframework.web.filter.CorsFilter@5e7aa27e, org.springframework.security.web.authentication.logout.LogoutFilter@2045108, com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter@21202507, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f93816d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1fa35f7e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b778004, org.springframework.security.web.session.SessionManagementFilter@4ed761dc, org.springframework.security.web.access.ExceptionTranslationFilter@62bcfa01, org.springframework.security.web.access.intercept.AuthorizationFilter@7b0d42b6]
+2023-09-17 15:39:49 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-17 15:39:49 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-17 15:39:49 [main] INFO  : Started CafeManagementSystemApplication in 21.188 seconds (process running for 23.87)
+2023-09-17 15:45:18 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 15:45:18 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-17 15:45:18 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-17 15:45:32 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 13356 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-17 15:45:32 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-17 15:45:33 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-17 15:45:34 [main] INFO  : Finished Spring Data repository scanning in 128 ms. Found 5 JPA repository interfaces.
+2023-09-17 15:45:35 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-17 15:45:35 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-17 15:45:35 [main] INFO  : Starting service [Tomcat]
+2023-09-17 15:45:35 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-17 15:45:35 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-17 15:45:35 [main] INFO  : Root WebApplicationContext: initialization completed in 2966 ms
+2023-09-17 15:45:35 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-17 15:45:35 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-17 15:45:35 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-17 15:45:35 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 15:45:36 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-17 15:45:36 [main] INFO  : HikariPool-1 - Starting...
+2023-09-17 15:45:36 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4cd7e993
+2023-09-17 15:45:36 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-17 15:45:37 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 15:45:38 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-17 15:45:38 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 15:45:39 [main] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-17 15:45:39 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-17 15:45:40 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@67f8586f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63c6579, org.springframework.security.web.context.SecurityContextHolderFilter@764bf20d, org.springframework.security.web.header.HeaderWriterFilter@37ec9c49, org.springframework.web.filter.CorsFilter@5c7a699b, org.springframework.security.web.authentication.logout.LogoutFilter@7e1f88e2, com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter@1399ad68, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@184218af, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31084f37, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38cd7531, org.springframework.security.web.session.SessionManagementFilter@2c6b36d7, org.springframework.security.web.access.ExceptionTranslationFilter@1fa35f7e, org.springframework.security.web.access.intercept.AuthorizationFilter@72426ced]
+2023-09-17 15:45:41 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-17 15:45:41 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-17 15:45:41 [main] INFO  : Started CafeManagementSystemApplication in 10.027 seconds (process running for 12.169)
+2023-09-17 16:01:30 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 16:01:30 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-17 16:01:30 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-17 16:05:49 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 17896 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-17 16:05:49 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-17 16:05:51 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-17 16:05:51 [main] INFO  : Finished Spring Data repository scanning in 15 ms. Found 0 JPA repository interfaces.
+2023-09-17 16:05:52 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-17 16:05:52 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-17 16:05:52 [main] INFO  : Starting service [Tomcat]
+2023-09-17 16:05:52 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-17 16:05:52 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-17 16:05:52 [main] INFO  : Root WebApplicationContext: initialization completed in 2712 ms
+2023-09-17 16:05:52 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-17 16:05:52 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-17 16:05:52 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-17 16:05:52 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 16:05:53 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-17 16:05:53 [main] INFO  : HikariPool-1 - Starting...
+2023-09-17 16:05:53 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@464400b3
+2023-09-17 16:05:53 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-17 16:05:53 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 16:05:54 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-17 16:05:54 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 16:05:54 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-17 16:05:55 [main] WARN  : 
+
+Using generated security password: a22d37ee-feed-49bb-985d-a569102e65c1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-09-17 16:05:55 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b657342, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15a2fddd, org.springframework.security.web.context.SecurityContextHolderFilter@261f5a45, org.springframework.security.web.header.HeaderWriterFilter@2570851e, org.springframework.security.web.csrf.CsrfFilter@b63365c, org.springframework.security.web.authentication.logout.LogoutFilter@7bad18f5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5c16561a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@89465d9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@452e2210, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@392ef4ff, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d41200c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9dbb1d9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18c0f025, org.springframework.security.web.access.ExceptionTranslationFilter@5300694d, org.springframework.security.web.access.intercept.AuthorizationFilter@4511146f]
+2023-09-17 16:05:55 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-17 16:05:55 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-17 16:05:55 [main] INFO  : Started CafeManagementSystemApplication in 7.223 seconds (process running for 8.535)
+2023-09-17 16:06:41 [http-nio-8080-exec-3] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-17 16:06:41 [http-nio-8080-exec-3] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-09-17 16:06:41 [http-nio-8080-exec-3] INFO  : Completed initialization in 4 ms
+2023-09-17 16:08:48 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 16:08:48 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-17 16:08:48 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-17 16:08:58 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 5016 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-17 16:08:58 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-17 16:08:59 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-17 16:08:59 [main] INFO  : Finished Spring Data repository scanning in 41 ms. Found 0 JPA repository interfaces.
+2023-09-17 16:09:01 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-17 16:09:01 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-17 16:09:01 [main] INFO  : Starting service [Tomcat]
+2023-09-17 16:09:01 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-17 16:09:01 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-17 16:09:01 [main] INFO  : Root WebApplicationContext: initialization completed in 3525 ms
+2023-09-17 16:09:02 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-17 16:09:02 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-17 16:09:02 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-17 16:09:03 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 16:09:03 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-17 16:09:03 [main] INFO  : HikariPool-1 - Starting...
+2023-09-17 16:09:04 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@59313495
+2023-09-17 16:09:04 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-17 16:09:04 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 16:09:05 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-17 16:09:05 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 16:09:08 [main] WARN  : 
+
+Using generated security password: bb7453a7-a5bf-46be-92cd-4fcab2d32d87
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-09-17 16:09:08 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@522fb69, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@593354fa, org.springframework.security.web.context.SecurityContextHolderFilter@74797b90, org.springframework.security.web.header.HeaderWriterFilter@53da2aec, org.springframework.security.web.csrf.CsrfFilter@58679ff, org.springframework.security.web.authentication.logout.LogoutFilter@a44ad33, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e4d93f7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@66d69cd2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6dfebd2a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@261f5a45, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@720c0996, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@17f8cad6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9dbb1d9, org.springframework.security.web.access.ExceptionTranslationFilter@3b3f62d7, org.springframework.security.web.access.intercept.AuthorizationFilter@5b028f58]
+2023-09-17 16:09:09 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-17 16:09:09 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-17 16:09:09 [main] INFO  : Started CafeManagementSystemApplication in 11.561 seconds (process running for 12.83)
+2023-09-17 16:09:26 [http-nio-8080-exec-2] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-17 16:09:26 [http-nio-8080-exec-2] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-09-17 16:09:26 [http-nio-8080-exec-2] INFO  : Completed initialization in 3 ms
+2023-09-17 16:11:33 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 16:11:33 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-17 16:11:33 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-17 16:14:17 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 12648 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-17 16:14:17 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-17 16:14:18 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-17 16:14:18 [main] INFO  : Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces.
+2023-09-17 16:14:19 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-17 16:14:19 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-17 16:14:19 [main] INFO  : Starting service [Tomcat]
+2023-09-17 16:14:19 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-17 16:14:19 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-17 16:14:19 [main] INFO  : Root WebApplicationContext: initialization completed in 2075 ms
+2023-09-17 16:14:20 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-17 16:14:20 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-17 16:14:20 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-17 16:14:20 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 16:14:20 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-17 16:14:20 [main] INFO  : HikariPool-1 - Starting...
+2023-09-17 16:14:20 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1d7c9811
+2023-09-17 16:14:20 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-17 16:14:21 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 16:14:21 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-17 16:14:21 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 16:14:22 [main] WARN  : 
+
+Using generated security password: 8fb40f33-77ee-45da-800b-f6c5fadbd1b0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-09-17 16:14:23 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@69ed96e1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61648dd2, org.springframework.security.web.context.SecurityContextHolderFilter@62dfe152, org.springframework.security.web.header.HeaderWriterFilter@35d2312f, org.springframework.security.web.csrf.CsrfFilter@4fe9a396, org.springframework.security.web.authentication.logout.LogoutFilter@66d69cd2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@42d7e8bc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@ea0c99c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3ac326c0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@627d5f99, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6afced93, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6edb2c7b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e5d40ec, org.springframework.security.web.access.ExceptionTranslationFilter@44117b0d, org.springframework.security.web.access.intercept.AuthorizationFilter@1896299b]
+2023-09-17 16:14:23 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-17 16:14:23 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-17 16:14:23 [main] INFO  : Started CafeManagementSystemApplication in 6.21 seconds (process running for 7.421)
+2023-09-17 16:19:31 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 16:19:31 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-17 16:19:31 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-17 16:19:39 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 15172 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-17 16:19:39 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-17 16:19:40 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-17 16:19:40 [main] INFO  : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2023-09-17 16:19:40 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-17 16:19:40 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-17 16:19:40 [main] INFO  : Starting service [Tomcat]
+2023-09-17 16:19:40 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-17 16:19:41 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-17 16:19:41 [main] INFO  : Root WebApplicationContext: initialization completed in 1635 ms
+2023-09-17 16:19:41 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-17 16:19:41 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-17 16:19:41 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-17 16:19:41 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 16:19:41 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-17 16:19:41 [main] INFO  : HikariPool-1 - Starting...
+2023-09-17 16:19:41 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@24aedcc5
+2023-09-17 16:19:41 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-17 16:19:41 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 16:19:42 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-17 16:19:42 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 16:19:43 [main] WARN  : 
+
+Using generated security password: dde689d2-e6eb-4ac5-b427-c1ea843a078f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-09-17 16:19:43 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@13dc383b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6885f3f7, org.springframework.security.web.context.SecurityContextHolderFilter@5300694d, org.springframework.security.web.header.HeaderWriterFilter@9f52eb7, org.springframework.security.web.csrf.CsrfFilter@7b6854b5, org.springframework.security.web.authentication.logout.LogoutFilter@39296cef, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3c1df0e9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@9dbb1d9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@392ef4ff, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3b780b5c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2570851e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76673ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ed7c178, org.springframework.security.web.access.ExceptionTranslationFilter@1e4d93f7, org.springframework.security.web.access.intercept.AuthorizationFilter@4714f447]
+2023-09-17 16:19:43 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-17 16:19:43 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-17 16:19:43 [main] INFO  : Started CafeManagementSystemApplication in 4.999 seconds (process running for 5.918)
+2023-09-17 16:19:53 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 16:19:53 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-17 16:19:53 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-17 16:19:57 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 7400 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-17 16:19:57 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-17 16:19:58 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-17 16:19:58 [main] INFO  : Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2023-09-17 16:19:59 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-17 16:19:59 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-17 16:19:59 [main] INFO  : Starting service [Tomcat]
+2023-09-17 16:19:59 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-17 16:19:59 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-17 16:19:59 [main] INFO  : Root WebApplicationContext: initialization completed in 1993 ms
+2023-09-17 16:19:59 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-17 16:20:00 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-17 16:20:00 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-17 16:20:00 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 16:20:00 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-17 16:20:00 [main] INFO  : HikariPool-1 - Starting...
+2023-09-17 16:20:00 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7ed8b44
+2023-09-17 16:20:00 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-17 16:20:00 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 16:20:01 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-17 16:20:01 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 16:20:02 [main] WARN  : 
+
+Using generated security password: 50d8ca7c-41dc-4fa6-a381-dc387dd7e9c4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-09-17 16:20:02 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7d75940, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e5cbcfe, org.springframework.security.web.context.SecurityContextHolderFilter@72c1bf75, org.springframework.security.web.header.HeaderWriterFilter@647aa45c, org.springframework.security.web.csrf.CsrfFilter@6a013bdd, org.springframework.security.web.authentication.logout.LogoutFilter@6ed87ccf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7fd32c56, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1f95158a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6773bab2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4fcedf83, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6fb219dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@518a7b8a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1055d261, org.springframework.security.web.access.ExceptionTranslationFilter@4cbb11e4, org.springframework.security.web.access.intercept.AuthorizationFilter@7b33deed]
+2023-09-17 16:20:02 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-17 16:20:02 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-17 16:20:02 [main] INFO  : Started CafeManagementSystemApplication in 5.592 seconds (process running for 7.191)
+2023-09-17 16:22:16 [main] INFO  : Could not detect default configuration classes for test class [com.example.cafemanagementsystem.CafeManagementSystemApplicationTests]: CafeManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-09-17 16:22:16 [main] INFO  : Found @SpringBootConfiguration com.example.cafemanagementsystem.CafeManagementSystemApplication for test class com.example.cafemanagementsystem.CafeManagementSystemApplicationTests
+2023-09-17 16:22:17 [main] INFO  : Starting CafeManagementSystemApplicationTests using Java 17.0.8 with PID 14352 (started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-17 16:22:17 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-17 16:22:18 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-17 16:22:19 [main] INFO  : Finished Spring Data repository scanning in 198 ms. Found 5 JPA repository interfaces.
+2023-09-17 16:22:19 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-17 16:22:19 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-17 16:22:19 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-17 16:22:20 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 16:22:20 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-17 16:22:20 [main] INFO  : HikariPool-1 - Starting...
+2023-09-17 16:22:20 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@59127611
+2023-09-17 16:22:20 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-17 16:22:21 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 16:22:22 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-17 16:22:22 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 16:22:23 [main] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-17 16:22:27 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@657f1fc3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a0ca728, org.springframework.security.web.context.SecurityContextHolderFilter@24afdf18, org.springframework.security.web.header.HeaderWriterFilter@7edb2a4b, org.springframework.web.filter.CorsFilter@5cc088a8, org.springframework.security.web.authentication.logout.LogoutFilter@4bdec54, com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter@60739eca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54e63f7c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74f1e112, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25777ab6, org.springframework.security.web.session.SessionManagementFilter@1dd36967, org.springframework.security.web.access.ExceptionTranslationFilter@2d28114b, org.springframework.security.web.access.intercept.AuthorizationFilter@6a3cb81c]
+2023-09-17 16:22:28 [main] INFO  : Started CafeManagementSystemApplicationTests in 11.226 seconds (process running for 12.664)
+2023-09-17 16:22:29 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 16:22:29 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-17 16:22:29 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-17 16:22:42 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 16:22:42 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-17 16:22:42 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-17 16:22:50 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 8416 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-17 16:22:50 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-17 16:22:51 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-17 16:22:51 [main] INFO  : Finished Spring Data repository scanning in 89 ms. Found 5 JPA repository interfaces.
+2023-09-17 16:22:52 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-17 16:22:52 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-17 16:22:52 [main] INFO  : Starting service [Tomcat]
+2023-09-17 16:22:52 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-17 16:22:52 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-17 16:22:52 [main] INFO  : Root WebApplicationContext: initialization completed in 2070 ms
+2023-09-17 16:22:52 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-17 16:22:52 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-17 16:22:52 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-17 16:22:52 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 16:22:53 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-17 16:22:53 [main] INFO  : HikariPool-1 - Starting...
+2023-09-17 16:22:53 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@9f1ca74
+2023-09-17 16:22:53 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-17 16:22:53 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 16:22:54 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-17 16:22:54 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 16:22:55 [main] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-17 16:22:56 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2fb006dc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1285ec6, org.springframework.security.web.context.SecurityContextHolderFilter@412bb41f, org.springframework.security.web.header.HeaderWriterFilter@42b4cce1, org.springframework.web.filter.CorsFilter@2abe5132, org.springframework.security.web.authentication.logout.LogoutFilter@20307cb9, com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter@20505460, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1cb09347, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a28b6d0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12fbc568, org.springframework.security.web.session.SessionManagementFilter@3b87c881, org.springframework.security.web.access.ExceptionTranslationFilter@72426ced, org.springframework.security.web.access.intercept.AuthorizationFilter@7caa5387]
+2023-09-17 16:22:57 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-17 16:22:57 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-17 16:22:57 [main] INFO  : Started CafeManagementSystemApplication in 7.139 seconds (process running for 8.226)
+2023-09-17 16:23:30 [http-nio-8080-exec-1] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-17 16:23:30 [http-nio-8080-exec-1] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-09-17 16:23:30 [http-nio-8080-exec-1] INFO  : Completed initialization in 4 ms
+2023-09-17 16:23:30 [http-nio-8080-exec-1] INFO  : Inside login
+2023-09-17 16:23:30 [http-nio-8080-exec-1] INFO  : Authenticating user
+2023-09-17 16:23:31 [http-nio-8080-exec-1] INFO  : Inside generateToken()
+2023-09-17 16:23:31 [http-nio-8080-exec-1] INFO  : Inside createToken()
+2023-09-17 16:24:36 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 16:24:36 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-17 16:24:36 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-17 16:24:45 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 8236 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-17 16:24:45 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-17 16:24:46 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-17 16:24:46 [main] INFO  : Finished Spring Data repository scanning in 93 ms. Found 5 JPA repository interfaces.
+2023-09-17 16:24:47 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-17 16:24:47 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-17 16:24:47 [main] INFO  : Starting service [Tomcat]
+2023-09-17 16:24:47 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-17 16:24:47 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-17 16:24:47 [main] INFO  : Root WebApplicationContext: initialization completed in 2038 ms
+2023-09-17 16:24:47 [main] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-17 16:24:47 [main] INFO  : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-17 16:24:47 [main] INFO  : HHH000406: Using bytecode reflection optimizer
+2023-09-17 16:24:47 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 16:24:47 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-17 16:24:47 [main] INFO  : HikariPool-1 - Starting...
+2023-09-17 16:24:48 [main] INFO  : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@36cfe107
+2023-09-17 16:24:48 [main] INFO  : HikariPool-1 - Start completed.
+2023-09-17 16:24:48 [main] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-09-17 16:24:49 [main] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-17 16:24:49 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 16:24:50 [main] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-17 16:24:51 [main] INFO  : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6affbed1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2cf93603, org.springframework.security.web.context.SecurityContextHolderFilter@6351efa6, org.springframework.security.web.header.HeaderWriterFilter@64230d44, org.springframework.web.filter.CorsFilter@6fe43257, org.springframework.security.web.authentication.logout.LogoutFilter@42fe9099, com.example.cafemanagementsystem.jwt.JwtAuthenticationFilter@6dadcf58, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@349e166, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7310bc90, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@dab0a6c, org.springframework.security.web.session.SessionManagementFilter@7e7e34ef, org.springframework.security.web.access.ExceptionTranslationFilter@684001e6, org.springframework.security.web.access.intercept.AuthorizationFilter@126a8548]
+2023-09-17 16:24:52 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-17 16:24:52 [main] INFO  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-17 16:24:52 [main] INFO  : Started CafeManagementSystemApplication in 7.713 seconds (process running for 9.095)
+2023-09-17 16:45:49 [http-nio-8080-exec-2] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-17 16:45:49 [http-nio-8080-exec-2] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-09-17 16:45:49 [http-nio-8080-exec-2] INFO  : Completed initialization in 134 ms
+2023-09-17 16:58:01 [SpringApplicationShutdownHook] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-17 16:58:01 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown initiated...
+2023-09-17 16:58:01 [SpringApplicationShutdownHook] INFO  : HikariPool-1 - Shutdown completed.
+2023-09-17 17:43:11 [main] INFO  : Starting CafeManagementSystemApplication using Java 17.0.8 with PID 11720 (C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes started by ThinkPad in C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem)
+2023-09-17 17:43:11 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-09-17 17:43:12 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-17 17:43:13 [main] INFO  : Finished Spring Data repository scanning in 123 ms. Found 5 JPA repository interfaces.
+2023-09-17 17:43:13 [main] INFO  : Tomcat initialized with port(s): 8080 (http)
+2023-09-17 17:43:14 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-17 17:43:14 [main] INFO  : Starting service [Tomcat]
+2023-09-17 17:43:14 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-17 17:43:14 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2023-09-17 17:43:14 [main] INFO  : Root WebApplicationContext: initialization completed in 2328 ms
+2023-09-17 17:43:14 [main] ERROR : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes\com\example\cafemanagementsystem\jwt\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'applicationConfig' defined in file [C:\Users\ThinkPad\IdeaProjects\SpringBoot\CafeManagementSystem\target\classes\com\example\cafemanagementsystem\jwt\ApplicationConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepo' defined in com.example.cafemanagementsystem.repo.UserRepo defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+2023-09-17 17:43:14 [main] INFO  : Stopping service [Tomcat]
+2023-09-17 17:43:14 [main] WARN  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2023-09-17 17:43:14 [main] INFO  : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-09-17 17:43:14 [main] ERROR : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
