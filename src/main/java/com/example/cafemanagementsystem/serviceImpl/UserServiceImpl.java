@@ -10,8 +10,6 @@ import com.example.cafemanagementsystem.service.UserService;
 import com.example.cafemanagementsystem.utils.CafeUtils;
 import com.example.cafemanagementsystem.utils.EmailUtils;
 import com.example.cafemanagementsystem.wrapper.UserWrapper;
-import com.google.common.base.Strings;
-import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -41,7 +39,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public ResponseEntity<String> signup(Map<String, String> userRequestDto) {
         try {
-            log.info("Inside signup()", userRequestDto);
+            log.info("Inside signup()"+ userRequestDto);
 
             if (validateSignUpMap(userRequestDto)) {
 
@@ -90,7 +88,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public ResponseEntity<String> login(Map<String, String> userRequestDto) {
-        log.info("Inside login");
+        log.info("Inside login"+userRequestDto);
 
         try {
             log.info("Authenticating user");

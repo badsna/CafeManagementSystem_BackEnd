@@ -1,7 +1,14 @@
-version: '3.18.3'
-services:
+  version: '3.8'
+
+  services:
     swaggercontainer:
       image: swaggerapi/swagger-ui
+      container_name: swaggercontainer
       ports:
         - '8087:8080'
+      networks:
+        - resources_cafemgmtsys_network
 
+  networks:
+    resources_cafemgmtsys_network:
+      external: true #Indicates that this network is external, meaning it was created outside of this Compose file.

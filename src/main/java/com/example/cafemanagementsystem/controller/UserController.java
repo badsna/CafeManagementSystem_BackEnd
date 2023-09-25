@@ -10,7 +10,10 @@ import io.swagger.v3.oas.annotations.media.ExampleObject;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -32,9 +35,12 @@ import java.util.Map;
 
 public class UserController {
     private final UserService userService;
+    Logger log= LoggerFactory.getLogger(UserController.class);
+
 
     @PostMapping("/signup")
     @Operation(description = "Signup Service")
+    @Tag(name = "userPostApi")
     public ResponseEntity<String> signup(
             @io.swagger.v3.oas.annotations.parameters.RequestBody(
                     content = @Content(
@@ -57,6 +63,7 @@ public class UserController {
 
     @PostMapping("/login")
     @Operation(description = "Login Service")
+    @Tag(name = "userPostApi")
     public ResponseEntity<String> login(
             @io.swagger.v3.oas.annotations.parameters.RequestBody(
                     content = @Content(
@@ -99,6 +106,7 @@ public class UserController {
             description = "Updating User Status",
             security = @SecurityRequirement(name = "bearerAuth")
     )
+    @Tag(name = "userPostApi")
     public ResponseEntity<String> updateUser(
             @io.swagger.v3.oas.annotations.parameters.RequestBody(
                     content = @Content(
@@ -139,6 +147,7 @@ public class UserController {
             description = "Changing Password",
             security = @SecurityRequirement(name = "bearerAuth")
     )
+    @Tag(name = "userPostApi")
     public ResponseEntity<String> changePassword(
             @io.swagger.v3.oas.annotations.parameters.RequestBody(
                     content = @Content(

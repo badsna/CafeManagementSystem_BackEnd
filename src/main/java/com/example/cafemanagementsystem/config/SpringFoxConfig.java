@@ -11,8 +11,10 @@ import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.media.Content;
 import io.swagger.v3.oas.models.responses.ApiResponse;
 import org.json.JSONException;
+import org.springdoc.core.models.GroupedOpenApi;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
 
 import java.io.IOException;
@@ -25,6 +27,8 @@ import java.io.IOException;
         bearerFormat = "JWT",
         scheme = "bearer"
 )
+
+
 public class SpringFoxConfig {
     @Bean
    public OpenAPI baseOpenAPI() throws JSONException, IOException {
@@ -73,5 +77,11 @@ public class SpringFoxConfig {
 
                 .info(new Info().title("Spring Doc").version("1.0.0").description("Spring DOc"))
                 ;
+    }
+
+    @Bean
+     public GroupedOpenApi postApi(){
+         String []paths={"/user/**"};
+         return GroupedOpenApi.builder().group("userPostApi").pathsToMatch(paths).build();
     }
 }

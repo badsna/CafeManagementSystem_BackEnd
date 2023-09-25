@@ -7,12 +7,13 @@ services:
     ports:
       - "5432:5432"  # host:container
     environment: #Defines environment variables for configuring the PostgreSQL database
-      POSTGRES_PASSWORD:  # postgres password
+      POSTGRES_PASSWORD: By@$hna%  # postgres password
       POSTGRES_DB: cafemgmtsys_db  # database
     volumes:
       - custom_cafemgmtsys_db:/var/lib/postgresql/data  # this volume ensures that the data created and used by the PostgreSQL database container is stored outside of the container itself.
     networks:
       cafemgmtsys_network:    # The PostgreSQL container will be connected to this network.
+
 
 #These sections define the actual volume and network that are used in the service configurations.
 networks:
